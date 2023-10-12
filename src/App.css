@@ -1,38 +1,342 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Serif+Display:wght@300;400;500&display=swap');
+
+@font-face{
+    font-family: 'ye_font';
+    src: url(./ye_font.ttf);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.ye_text {
+    font-family: ye_font;
+    color: #0bb636;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+* {
+    border: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Serif Display', serif;
+    font-weight: 400;
+    color: white;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.nextone {
+    top: 66.7% !important;
+    transform: scaleX(-1) !important;
 }
 
-.App-link {
-  color: #61dafb;
+h3 {
+    font-size: 26px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h1 {
+    font-size: 52px;
+}
+
+h4 {
+    font-size: 32px;
+}
+
+.text_glow {
+    text-shadow: 0px 0px 4px rgb(255, 255, 255);
+}
+
+.cartoony {
+    font-family: 'Shantell Sans', cursive;
+}
+
+.scroll_btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.scroll {
+    top: 70%;
+    position: absolute;
+    width: 40px;
+    height: 60px;
+    filter: blur(0.7px);
+    border: 3px solid white;
+    border-radius: 30%;
+}
+
+.scroll:after {
+    content: "";
+    position: absolute;
+    top: 30%;
+    left: 48%;
+    width: 2px;
+    height: 7px;
+    background-color: white;
+    filter: blur(0.5px);
+    border-radius: 10%;
+    transition: all 300ms ease;
+    animation: scroll 1.5s ease-out infinite;
+}
+
+@keyframes scroll{
+    0% {
+        top: 40%;
+        transform: scale(1);
+    }
+    25% {
+        top: 30%;
+        transform: scale(1);
+    }
+    50% {
+        top: 20%;
+        transform: scale(1);
+    }
+    75% {
+        top: 30%;
+        transform: scale(0.8);
+    }
+    100% {
+        top: 40%;
+        transform: scale(1);
+    }
+}
+
+.section_subtitle {
+    font-size: 18px;
+    margin: 12px 12px;
+}
+
+/* NAVBAR */
+
+.navBar {
+    position: relative;
+    width: 80%;
+    height: 12vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.navBar_container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.navbar_link {
+    position: relative;
+    text-shadow: 0px 0px 32px rgb(255, 255, 255);
+    color: white;
+    cursor: pointer;
+    transition: all 300ms ease;
+}
+
+.navbar_link:hover {
+    text-shadow: 0px 0px 8px rgb(255, 255, 255);
+    transform: scale(1.1);
+}
+
+.navBar:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 0.5px;
+    background-color: white;
+    filter: blur(0.7px);
+    border-radius: 100%;
+    bottom: 0%;
+}
+
+.ye_logo {
+    width: 6vw;
+    height: auto;
+    filter: blur(0.7px) invert(1);
+    text-shadow: 0px 0px 8px rgb(255, 255, 255);
+}
+
+.ye_bg {
+    top: 0%;
+    width: 100vw;
+    height: 100vh;
+    z-index: -5;
+    position: absolute;
+}
+
+.inverted {
+    transform: rotate(180deg);
+}
+
+/* HEADER */
+
+header {
+    position: relative;
+    width: 100vw;
+    height: 88vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header:after {
+    content: "";
+    top: 88%;
+    left: 0%;
+    width: 100%;
+    height: 20vh;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0);
+    background-image: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(37, 37, 37, 1) 50%, rgba(255, 255, 255, 0) 100%);
+}
+
+.header_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 52px;
+    width: 100%;
+    height: 100%;
+}
+
+.header_title {
+    color: #fefefe;
+    filter: blur(0.5px);
+    font-family: 'Shantell Sans', cursive;
+    word-spacing: 1vw;
+}
+
+.header_subtitle {
+    color: #fefefe;
+    filter: blur(0.5px);
+    font-family: 'Shantell Sans', cursive;
+    margin-bottom: 15%;
+}
+
+/* OVERVIEW */
+
+.ow {
+    position: relative;
+    width: 100vw;
+    height: 150vh;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    padding-top: 30vh;
+}
+
+.ow_container {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    gap: 25vh;
+    margin-top: 16vh;
+}
+
+.albums_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 80%;
+    height: 100%;
+}
+
+.overflower {
+    display: flex;
+    align-items: center;
+    height: 350px;
+    overflow: hidden;
+}
+
+.album {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 11vw;
+    margin: 18px 18px;
+    height: auto;
+    z-index: 5;
+}
+
+.lr {
+    width: 10vw;
+}
+
+.album_vinyl {
+    width: 90%;
+    height: 90%;
+    z-index: 5;
+    border-radius: 8%;
+    -webkit-box-shadow: 0px 0px 34px 0px rgba(66, 68, 90, 1);
+    -moz-box-shadow: 0px 0px 34px 0px rgba(66, 68, 90, 1);
+    box-shadow: 0px 0px 34px 0px rgba(66, 68, 90, 1);
+}
+
+.album_cd {
+    content: "";
+    position: absolute;
+    width: 90%;
+    height: auto;
+    top: 0%;
+    left: 0%;
+    z-index: -1 !important;
+    animation: spin 10000ms linear infinite;
+    
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.album_cd {
+    left: 50%;
+    z-index: 50;
+}
+
+.album_text-wrapper {
+    content: "";
+    position: absolute;
+    z-index: -1;
+}
+
+.yeezus {
+    width: 11vw;
+}
+
+.ye_cd {
+    width: 79%;
+}
+
+.yeezus_cd {
+    width: 75%;
+}
+
+.mbdtf_cd {
+    width: 10%;
+}
+
+.mbdtf_cd {
+    width: 84%;
+}
+
+.kanye_photo-collection {
+    width: 400px;
+    height: 600px;
+    position: relative;
+    overflow: hidden;
+    margin: 80px 72px;
+}
+
+.kanye_photo {
+    width: 100%;
 }
