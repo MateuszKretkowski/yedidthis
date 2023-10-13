@@ -57,11 +57,11 @@ function Biblio() {
               <figure className="album_img-wrapper">
                 <img
                   className={"album_vinyl " + album.vinylClass}
-                  src={require(album.vinylSrc)}
+                  src={album.vinylSrc}
                 />
                 <img
                   className={"album_cd " + album.cdClass}
-                  src={require(album.cdSrc)}
+                  src={album.cdSrc}
                 />
               </figure>
               <div className="album_text-wrapper">

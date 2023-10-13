@@ -1,6 +1,6 @@
 import "../../App.css";
 import "./navBar.css";
-import yeLogo from "../../Images/ye_logo.png";
+import yeLogo from "../../ye_logo.png";
 
 function NavBar() {
   return (
