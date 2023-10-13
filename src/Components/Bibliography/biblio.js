@@ -1,10 +1,12 @@
 import "../../App.js";
 import "./bibliography.css";
-import albums from "../Albums/albums.js"
+import albums from "../../data/Albums/albums.js"
 import React, { useState, useCallback, useEffect } from "react";
-import { motion, useAnimate, stagger } from "framer-motion";
+import { motion, useAnimate, stagger, useInView } from "framer-motion";
 
 function Biblio() {
+
+  const [scope, animate] = useAnimate();
 
   let albumInView = false;
 
@@ -18,8 +20,6 @@ function Biblio() {
     leave: { scale: 0, y: 0 },
   };
 
-  const [scope, animate] = useAnimate();
- 
   const onButtonClick = () => {
     animate([
       [".album", { x: 50 }, { duration: 1, delay: stagger(0.05) }],
@@ -36,34 +36,32 @@ function Biblio() {
       <div className={"albums_container"}>
         {albums.map((album, i) => (
           <motion.div
-            ref={scope}
             key={album.id}
             variants={fadeInAnimationVariants}
             initial="initial"
-            whileInView="animate2"
-            viewport={{ once: false }}
+            animate={"animate2"} // Animate when in view
             transition={{
               type: "spring",
               duration: 0.5,
               duration: 0.3,
-              delay: i <= 5 ? (i = 0.3) : (i = 0.38),
+              delay: i <= 5 ? 0.3 : 0.38, // Remove the unnecessary assignments
             }}
           >
             <motion.div
               className={"album " + album.className}
               key={album.id}
-              onClick={onButtonClick()}
+              onClick={onButtonClick} // Removed the () from onButtonClick
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}
             >
               <figure className="album_img-wrapper">
                 <img
                   className={"album_vinyl " + album.vinylClass}
-                  src={require("./" + album.vinylSrc)}
+                  src={require(album.vinylSrc)}
                 />
                 <img
                   className={"album_cd " + album.cdClass}
-                  src={require("./" + album.cdSrc)}
+                  src={require(album.cdSrc)}
                 />
               </figure>
               <div className="album_text-wrapper">

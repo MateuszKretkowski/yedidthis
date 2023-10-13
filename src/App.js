@@ -4,7 +4,7 @@ import { motion, useAnimate, stagger } from "framer-motion";
 import NavBar from "./Components/NavBar/navBar.js";
 import HeaderSection from "./Components/Header/headerSection.js";
 import Biblio from "./Components/Bibliography/biblio.js";
-import "./Components/Albums/albums.js";
+import "./data/Albums/albums.js";
 import yeHeaderBG from "./Images/ye_bg6.jpg";
 import yeBiblioBG from "./Images/ye_section-bg.png";
 
