@@ -1,11 +1,10 @@
 import "../../App.js";
 import "./bibliography.css";
-import albums from "../../data/Albums/albums.js"
-import React, { useState, useCallback, useEffect } from "react";
+import albums from "../../data/Albums/albums.js";
+import React, { useState } from "react";
 import { motion, useAnimate, stagger, useInView } from "framer-motion";
 
 function Biblio() {
-
   const [scope, animate] = useAnimate();
 
   let albumInView = false;
@@ -15,21 +14,25 @@ function Biblio() {
     animate2: { scale: 1, y: 0, opacity: 1 },
   };
 
-  const albumUnCover = {
-    animate2: { scale: 1.2, y: 200 },
-    leave: { scale: 0, y: 0 },
+  const onButtonClick = (albId, vinylCl, cdCl) => {
+    const alb = document.getElementById(albId)
+    const vinyl = document.getElementById(vinylCl)
+    const cd = document.getElementById(cdCl)
+    animate([
+      [alb, { scale: 1.5 }, { duration: 0.5, delay: stagger(5) }],
+      [cd, { x: 200 }, { duration: 2, at: "<"}],
+      [vinyl, { x: -160 }, { duration: 1, at: "<"}],
+    ]);
+    exit={{
+      [alb, { scale: 1 }, { duration: 0.5, delay: stagger(5) }],
+      [cd, { x: 0 }, { duration: 2, at: "<"}],
+      [vinyl, { x: 0 }, { duration: 1, at: "<"}],
+    }}
   };
 
-  const onButtonClick = () => {
-    animate([
-      [".album", { x: 50 }, { duration: 1, delay: stagger(0.05) }],
-      [".album_cd", { x: -10 }, { duration: 2 }],
-      [".album_vinyl", { x: 10 }, { duration: 2, at: "<" }],
-    ]);
-  };
 
   return (
-    <div className="ow_container">
+    <div className="ow_container" ref={scope}>
       <div className="introduction-wrapper">
         <h1 className="section_title ye_text">YE</h1>
       </div>
@@ -37,30 +40,35 @@ function Biblio() {
         {albums.map((album, i) => (
           <motion.div
             key={album.id}
+            data-value={album.albumclass}
             variants={fadeInAnimationVariants}
             initial="initial"
-            animate={"animate2"} // Animate when in view
+            animate={"animate2"}
             transition={{
               type: "spring",
               duration: 0.5,
               duration: 0.3,
-              delay: i <= 5 ? 0.3 : 0.38, // Remove the unnecessary assignments
+              delay: i <= 5 ? 0.3 : 0.38,
             }}
           >
             <motion.div
-              className={"album " + album.className}
-              key={album.id}
-              onClick={onButtonClick} // Removed the () from onButtonClick
-              whileHover={{ scale: 1.1 }}
+              className={"album " + album.albumclass}
+              id={album.id}
+              onClick={() => {
+                onButtonClick(album.id, album.vinylClass, album.cdClass);
+                onButtonClick.pause()
+              }}
               whileTap={{ scale: 0.9 }}
             >
               <figure className="album_img-wrapper">
                 <img
                   className={"album_vinyl " + album.vinylClass}
+                  id={album.vinylClass}
                   src={album.vinylSrc}
                 />
                 <img
                   className={"album_cd " + album.cdClass}
+                  id={album.cdClass}
                   src={album.cdSrc}
                 />
               </figure>

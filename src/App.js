@@ -12,8 +12,8 @@ function App() {
 
   return (
     <div className="App">
-      <img src={yeHeaderBG} className="ye_bg" />
       <NavBar />
+      <img src={yeHeaderBG} className="ye_bg-header" />
       <HeaderSection />
       <img src={yeBiblioBG} className="ye_bg inverted" />
       <img src={yeBiblioBG} className="ye_bg nextone" />
