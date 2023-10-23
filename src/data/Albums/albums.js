@@ -34,6 +34,7 @@ const albums = [
     titleClass: "tcd_title",
     description: "Jego pierwszy album",
     descriptionClass: "tcd_desc",
+    cdClass: "tcd_cd"
   },
   {
     id: 2,
@@ -45,6 +46,7 @@ const albums = [
     titleClass: "lr_title",
     description: "Jego drugi album",
     descriptionClass: "lr_desc",
+    cdClass: "lr_cd"
   },
   {
     id: 3,
@@ -56,6 +58,7 @@ const albums = [
     titleClass: "g_title",
     description: "Jego trzeci album",
     descriptionClass: "g_desc",
+    cdClass: "g_cd"
   },
   {
     id: 4,
@@ -67,6 +70,7 @@ const albums = [
     titleClass: "080s_title",
     description: "Jego czwarty album",
     descriptionClass: "080s_desc",
+    cdClass: "080s_cd"
   },
   {
     id: 5,
@@ -78,6 +82,7 @@ const albums = [
     titleClass: "mbdtf_title",
     description: "Jego piąty album",
     descriptionClass: "mbdtf_desc",
+    cdClass: "mbdtf_cd"
   },
   {
     id: 6,
@@ -89,6 +94,7 @@ const albums = [
     titleClass: "wtt_title",
     description: "Album wspólny z Jay-Z",
     descriptionClass: "wtt_desc",
+    cdClass: "wtt_cd"
   },
   {
     id: 7,
@@ -100,6 +106,7 @@ const albums = [
     titleClass: "yeezus_title",
     description: "Jego siódmy album",
     descriptionClass: "yeezus_desc",
+    cdClass: "yeezus_cd"
   },
   {
     id: 8,
@@ -111,6 +118,7 @@ const albums = [
     titleClass: "tlop_title",
     description: "Jego ósmy album",
     descriptionClass: "tlop_desc",
+    cdClass: "tlop_cd"
   },
   {
     id: 9,
@@ -122,6 +130,7 @@ const albums = [
     titleClass: "ye_title",
     description: "Jego dziewiąty album",
     descriptionClass: "ye_desc",
+    cdClass: "ye_cd"
   },
   {
     id: 10,
@@ -133,6 +142,7 @@ const albums = [
     titleClass: "ksg_title",
     description: "Album wspólny z Kid Cudi",
     descriptionClass: "ksg_desc",
+    cdClass: "ksg_cd"
   },
   {
     id: 11,
@@ -144,6 +154,7 @@ const albums = [
     titleClass: "jik_title",
     description: "Jego jedenasty album",
     descriptionClass: "jik_desc",
+    cdClass: "jik_cd"
   },
   {
     id: 12,
@@ -155,7 +166,11 @@ const albums = [
     titleClass: "donda_title",
     description: "Jego dwunasty album",
     descriptionClass: "donda_desc",
+    cdClass: "donda_cd"
   },
 ];
+
+console.log(albums);
+
 
 export default albums;

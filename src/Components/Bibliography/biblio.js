@@ -7,41 +7,22 @@ import {
   AnimatePresence,
   animate,
   stagger,
-  useAnimate,
 } from "framer-motion";
 
 function Biblio() {
   const [modalOpen, setModalOpen] = useState(Array(albums.length).fill(false));
 
   const openModal = (index) => {
-    const updatedModalOpen = modalOpen.map((value, i) =>
-      i === index ? true : value
-    );
-    setModalOpen(updatedModalOpen);
+    setModalOpen(modalOpen.map((value, i) => (i === index ? true : value)));
   };
 
   const closeModal = (index) => {
-    const updatedModalOpen = modalOpen.map((value, i) =>
-      i === index ? false : value
-    );
-    setModalOpen(updatedModalOpen);
-  };
-
-  const [scope, animate] = useAnimate();
-  const onButtonClick = (albId, vinylCl, cdCl) => {
-    const alb = document.getElementById(albId);
-    const vinyl = document.getElementById(vinylCl);
-    const cd = document.getElementById(cdCl);
-    animate([
-      [alb, { scale: 1.5 }, { duration: 0.5, delay: stagger(5) }],
-      [cd, { x: 200 }, { duration: 2, at: "<" }],
-      [vinyl, { x: -160 }, { duration: 1, at: "<" }],
-    ]);
+    setModalOpen(modalOpen.map((value, i) => (i === index ? false : value)));
   };
 
   const Modal = ({ isOpen, onClose, album }) => {
     return (
-      <AnimatePresence ref={scope}>
+      <AnimatePresence>
         {isOpen && (
           <div>
             <motion.div
@@ -107,21 +88,19 @@ function Biblio() {
                 }}
                 className="modal-content"
               >
-                <motion.div
-                  className={"album " + album.albumclass}
-                  id={album.id}
-                  animate={onButtonClick(
-                    album.id,
-                    album.vinylClass,
-                    album.cdClass
-                  )}
-                >
+                <div className={"album " + album.albumclass} id={album.id}>
                   <motion.figure className="album_img-wrapper">
                     <motion.img
                       initial={{
                         x: 0,
                         y: 0,
+                        
                       }}
+                      animate={[
+                        [{x: -100, y: 500}, {transition: { duration: 2, at: "+0.5" }}],
+    [{ x: 100, y: 200}, {transition: { duration: 2, at: "+0.5" }}],
+    [ {x: 600, y: 0}, {transition: { duration: 2, at: "+0.5" }} ]
+                      ]}
                       className={"album_vinyl " + album.vinylClass}
                       id={album.vinylClass}
                       src={album.vinylSrc}
@@ -131,6 +110,12 @@ function Biblio() {
                       className={"album_cd " + album.cdClass}
                       id={album.cdClass}
                       src={album.cdSrc}
+                      initial={{
+                        x: 0,
+                        y: 0,
+                      }}
+                      animate={{
+                      }}
                       alt="CD"
                     />
                   </motion.figure>
@@ -142,7 +127,7 @@ function Biblio() {
                       {album.description}
                     </motion.h4>
                   </motion.div>
-                </motion.div>
+                </div>
               </motion.div>
             </motion.div>
           </div>
@@ -162,7 +147,9 @@ function Biblio() {
             <button
               onClick={() => openModal(index)}
               className={`modal-button${modalOpen[index] ? " hidden" : ""}`}
-            ><img src={album.vinylSrc} className="button_img"></img></button>
+            >
+              <img src={album.vinylSrc} className="button_img" alt={album.title}></img>
+            </button>
             <Modal
               isOpen={modalOpen[index]}
               onClose={() => closeModal(index)}
