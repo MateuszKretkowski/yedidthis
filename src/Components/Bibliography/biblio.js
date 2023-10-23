@@ -1,4 +1,4 @@
-import "../../App.js";
+import "../../App.css";
 import "./bibliography.css";
 import albums from "../../data/Albums/albums.js";
 import React, { useState } from "react";
