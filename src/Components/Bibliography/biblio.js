@@ -51,6 +51,7 @@ function Biblio() {
               }}
               animate={{
                 scale: 1,
+                y: 200,
                 transition: {
                   duration: 0.3,
                   type: "spring",
@@ -97,9 +98,7 @@ function Biblio() {
                         
                       }}
                       animate={[
-                        [{x: -100, y: 500}, {transition: { duration: 2, at: "+0.5" }}],
-    [{ x: 100, y: 200}, {transition: { duration: 2, at: "+0.5" }}],
-    [ {x: 600, y: 0}, {transition: { duration: 2, at: "+0.5" }} ]
+                        [{x: -100, y: -120}, {transition: { duration: 2, at: "+0.5" }}],
                       ]}
                       className={"album_vinyl " + album.vinylClass}
                       id={album.vinylClass}
