@@ -98,8 +98,8 @@ function Biblio() {
                         
                       }}
                       animate={[
-                        [{x: -100, y: -120}, {transition: { duration: 2, at: "+0.5" }}],
-                      ]}
+                        [{x: -100, y: -120}, {transition: { duration: 2}}],
+                       ]}
                       className={"album_vinyl " + album.vinylClass}
                       id={album.vinylClass}
                       src={album.vinylSrc}
@@ -113,8 +113,9 @@ function Biblio() {
                         x: 0,
                         y: 0,
                       }}
-                      animate={{
-                      }}
+                      animate={[
+                        [{x: 100, y: -120}, {transition: { duration: 2}}],
+                      ]}
                       alt="CD"
                     />
                   </motion.figure>

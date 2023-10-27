@@ -17,7 +17,7 @@ function App() {
         <img src={yeHeaderBG} className="ye_bg-header" />
         <HeaderSection />  
       </div>
-      <div className="section">
+      <div className="section sect2">
         <img src={yeBiblioBG} className="ye_bg inverted" />
         <img src={yeBiblioBG} className="ye_bg nextone" />
         <Biblio />
