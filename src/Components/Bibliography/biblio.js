@@ -32,7 +32,6 @@ function Biblio() {
               animate={{
                 opacity: 1,
                 transition: {
-                  duration: 0.6,
                   type: "spring",
                 },
               }}
@@ -68,15 +67,12 @@ function Biblio() {
               <motion.div
                 initial={{
                   opacity: 0,
-                  scale: 0,
                 }}
                 animate={{
-                  x: 0,
                   opacity: 1,
-                  scale: 1.2,
                   transition: {
                     delay: 0.15,
-                    duration: 0.3,
+                    duration: 3,
                     type: "spring",
                   },
                 }}
@@ -93,13 +89,12 @@ function Biblio() {
                   <motion.figure className="album_img-wrapper">
                     <motion.img
                       initial={{
-                        x: 0,
-                        y: 0,
-                        
+                        x: -200, y: -120,
                       }}
-                      animate={[
-                        [{x: -100, y: -120}, {transition: { duration: 2}}],
-                       ]}
+                      animate={{
+                        x: -250, y: -120, scale: 1.4,
+                        transition: { duration: .5},
+                       }}
                       className={"album_vinyl " + album.vinylClass}
                       id={album.vinylClass}
                       src={album.vinylSrc}
@@ -110,20 +105,47 @@ function Biblio() {
                       id={album.cdClass}
                       src={album.cdSrc}
                       initial={{
-                        x: 0,
-                        y: 0,
+                        x: -250, y: -120, scale: 0.8
                       }}
-                      animate={[
-                        [{x: 100, y: -120}, {transition: { duration: 2}}],
-                      ]}
+                      animate={{
+                        x: 250, y: -120, scale: 1.4,
+                        transition: { duration: .3, delay: .3, type: "spring"},
+                       }}
                       alt="CD"
                     />
                   </motion.figure>
                   <motion.div className="album_text-wrapper">
-                    <motion.h2 className={album.titleClass}>
+                    <motion.h2 className={album.titleClass + " album_title"}
+                    initial={{
+                      x: 0,
+                      y: -100,
+                      opacity: 0,
+                      scale: 0
+                    }}
+                    animate={{
+                      x: 0,
+                      y: 0,
+                      opacity: 1,
+                      scale: 1.5,
+                      transition: { duration: 0.2, delay: .8, type: "spring"},
+                    }}
+                    >
                       {album.title}
                     </motion.h2>
-                    <motion.h4 className={album.descriptionClass}>
+                    <motion.h4 className={album.descriptionClass + " album_subtitle"}
+                    initial={{
+                      x: 0,
+                      opacity: 0,
+                      scale: 0
+                    }}
+                    animate={{
+                      x: 0,
+                      y: 0,
+                      opacity: 1,
+                      scale: 1,
+                      transition: { duration: 0.2, delay: 1.1, type: "spring"},
+                    }}
+                    >
                       {album.description}
                     </motion.h4>
                   </motion.div>

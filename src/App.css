@@ -5,6 +5,8 @@
     src: url(./ye_font.ttf);
 }
 
+* {
+}
 .ye_bg-header {
     width: 100%;
     height: 100%;
@@ -41,7 +43,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Noto Serif Display', serif;
+    font-family: 'Noto Serif Display', serif !important;
     font-weight: 400;
     color: white;
 }
