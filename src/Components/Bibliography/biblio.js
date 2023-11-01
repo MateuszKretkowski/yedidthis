@@ -89,10 +89,8 @@ function Biblio() {
                   <motion.figure className="album_img-wrapper">
                     <motion.img
                       initial={{
-                        x: -200, y: -120,
                       }}
                       animate={{
-                        x: -250, y: -120, scale: 1.4,
                         transition: { duration: .5},
                        }}
                       className={"album_vinyl " + album.vinylClass}
@@ -105,10 +103,8 @@ function Biblio() {
                       id={album.cdClass}
                       src={album.cdSrc}
                       initial={{
-                        x: -250, y: -120, scale: 0.8
                       }}
                       animate={{
-                        x: 250, y: -120, scale: 1.4,
                         transition: { duration: .3, delay: .3, type: "spring"},
                        }}
                       alt="CD"

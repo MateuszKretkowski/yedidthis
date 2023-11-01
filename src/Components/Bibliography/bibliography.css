@@ -35,36 +35,22 @@
     margin-top: 280px;
 }
 
-.overflower {
-    display: flex;
-    align-items: center;
-    height: 350px;
-    overflow: hidden;
-}
-
 .album {
-    position: relative;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 11vw;
-    height: auto;
     z-index: 5;
 }
 
 
 .album_vinyl {
-    width: 90%;
-    height: 90%;
+    width: 30%;
+    height: auto;
     border-radius: 8px;
     z-index: 5;
 }
 
 .album_cd {
-    content: "";
-    position: absolute;
-    width: 90%;
+    width: 30%;
     height: auto;
     top: 0%;
     left: 0%;
@@ -88,19 +74,24 @@
     }
 }
 
+.album_img-wrapper {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 90%;
+    height: 100%;
+    padding: 24px 24px;
+    background-color: #fff;
+    z-index: -1;
+}
 
 .album_text-wrapper {
-    content: "";
-    position: absolute;
     display: flex;
-    top: 150px;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     gap: 20px;
-    left: -360px;
-    width: 48vw;
-    margin: 0 0;
+    width: 100%;
 }
 
 .album_subtitle {
@@ -110,7 +101,6 @@
 
 .album_title {
     margin-top: 14px;
-    
 }
 
 .yeezus {
@@ -133,18 +123,6 @@
     width: 84%;
 }
 
-.kanye_photo-collection {
-    width: 400px;
-    height: 600px;
-    position: relative;
-    overflow: hidden;
-    margin: 80px 72px;
-}
-
-.kanye_photo {
-    width: 100%;
-}
-
 .albums_container {
     display: flex;
     justify-content: center;
@@ -152,7 +130,7 @@
     gap: 42px;
 }
 
-/* MODAL */
+/* MODAL MODAL MODAL MODAL MODAL MODAL MODAL MODAL MODAL MODAL MODAL */
 
 .modal-backdrop {
     position: fixed;
@@ -160,28 +138,26 @@
     width: 100vw;
     top: 0;
     left: 0;
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, .6);
 }
 
 .modal-content-wrapper {
     content: "";
     position: absolute;
-    top: 148vh;
-    left: 25%;
+    top: 144vh;
+    left: 21%;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 1000px;
-    height: 600px;
-    background-color: #b3b9c2fb;
+    justify-content: start;
+    align-items: flex-start;
+    width: 1200px;
+    height: 650px;
+    background-color: #000000B4;
     border-radius: 8px;
     z-index: 1;
 }
 
 .modal-content {
     display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .modal-button {
@@ -210,10 +186,6 @@
     border-radius: 6px;
 }
 
-.hidden {
-    transform: scale(0);
-}
-
 .album_title {
     font-weight: 500;
 }
@@ -223,5 +195,4 @@
 }
 
 .album_text-wrapper {
-    border-top: 2px solid white;
 }
