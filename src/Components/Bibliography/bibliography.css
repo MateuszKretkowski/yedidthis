@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600&family=Roboto:wght@400;500;700&display=swap');
 
 * {
     transition: all 300ms ease;
@@ -36,25 +37,25 @@
 }
 
 .album {
+    position: relative;
     display: flex;
-    flex-direction: column;
-    z-index: 5;
+    z-index: -5;
 }
 
 
 .album_vinyl {
-    width: 30%;
+    width: 45%;
     height: auto;
     border-radius: 8px;
     z-index: 5;
 }
 
 .album_cd {
-    width: 30%;
+    width: 45%;
     height: auto;
     top: 0%;
     left: 0%;
-    z-index: -1 !important;
+    z-index: 0 !important;
     transition: 300ms ease;
 }
 
@@ -78,10 +79,9 @@
     display: flex;
     justify-content: start;
     align-items: center;
-    width: 90%;
-    height: 100%;
+    width: 65%;
+    height: 400px;
     padding: 24px 24px;
-    background-color: #fff;
     z-index: -1;
 }
 
@@ -90,8 +90,11 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    padding: 12px 12px;
+
     gap: 20px;
-    width: 100%;
+    width: 65%;
+    height: 296px;
 }
 
 .album_subtitle {
@@ -101,10 +104,11 @@
 
 .album_title {
     margin-top: 14px;
+    letter-spacing: 3px;
 }
 
-.yeezus {
-    width: 11vw;
+.yeezus_cd {
+    width: 50%;
 }
 
 .ye_cd {
@@ -130,15 +134,36 @@
     gap: 42px;
 }
 
+.tracklist_container {
+    content: "";
+    position: absolute;
+    left: 65%;
+    top: 0;
+    width: 35%;
+    text-align: center;
+}
+
+.tracklist_track {
+    font-family: 'Oswald', sans-serif !important;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.tracklist_title {
+    font-family: 'Oswald', sans-serif !important;
+    font-weight: 500;
+}
+
 /* MODAL MODAL MODAL MODAL MODAL MODAL MODAL MODAL MODAL MODAL MODAL */
 
 .modal-backdrop {
     position: fixed;
     height: 100vh;
     width: 100vw;
+    z-index: 1;
     top: 0;
     left: 0;
-    background-color: rgba(0, 0, 0, .6);
+    background-color: rgba(0, 0, 0, .8);
 }
 
 .modal-content-wrapper {
@@ -149,11 +174,11 @@
     display: flex;
     justify-content: start;
     align-items: flex-start;
-    width: 1200px;
-    height: 650px;
-    background-color: #000000B4;
+    width: 1100px;
+    height: 700px;
     border-radius: 8px;
     z-index: 1;
+    background-color: rgba(255, 255, 255, 0.02);
 }
 
 .modal-content {
