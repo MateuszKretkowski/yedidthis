@@ -8,7 +8,7 @@ function NavBar() {
       <div className="navBar_container">
         <h3 className="navbar_link">MENU</h3>
         <img src={yeLogo} className="ye_logo" />
-        <h3 className="navbar_link">SETTINGS</h3>
+        <h3 className="navbar_link">LANGUAGE</h3>
       </div>
     </div>
   );

@@ -149,6 +149,7 @@ function Biblio() {
                         className={album.descriptionClass + " album_subtitle"}
                         initial={{
                           x: 0,
+                          y: 100,
                           opacity: 0,
                           scale: 0,
                         }}

@@ -3,8 +3,19 @@
 
 * {
     transition: all 300ms ease;
-    font-family: 'Roboto', sans-serif;
 }
+
+/* FIXES OF ALBUM */
+
+.ye_cd {
+    scale: 1.1
+}
+
+.yeezus_cd {
+    scale: 0.9
+}
+
+/* FIXES OF ALBUM */
 
 .ow {
     position: relative;
@@ -47,6 +58,7 @@
     width: 45%;
     height: auto;
     border-radius: 8px;
+
     z-index: 5;
 }
 
@@ -57,10 +69,6 @@
     left: 0%;
     z-index: 0 !important;
     transition: 300ms ease;
-}
-
-.animationSpin {
-    animation: spin 5000ms infinite;
 }
 
 @keyframes spin {
@@ -91,40 +99,24 @@
     align-items: center;
     flex-direction: column;
     padding: 12px 12px;
-
+    margin-top: 34px;
     gap: 20px;
     width: 65%;
     height: 296px;
 }
 
 .album_subtitle {
-    font-family: 'Roboto', sans-serif !important;
-    font-weight: 500;
+    font-family: 'Oswald', sans-serif !important;
+    font-weight: 400 !important;
+    text-align: center;
+    font-size: 24px;
 }
 
 .album_title {
+    font-family: 'Oswald', sans-serif !important;
+    font-weight: 400 !important;
     margin-top: 14px;
     letter-spacing: 3px;
-}
-
-.yeezus_cd {
-    width: 50%;
-}
-
-.ye_cd {
-    width: 79%;
-}
-
-.yeezus_cd {
-    width: 75%;
-}
-
-.mbdtf_cd {
-    width: 10%;
-}
-
-.mbdtf_cd {
-    width: 84%;
 }
 
 .albums_container {
@@ -209,15 +201,4 @@
 
 .button_img:hover {
     border-radius: 6px;
-}
-
-.album_title {
-    font-weight: 500;
-}
-
-.album_subtitle {
-    font-weight: 200;
-}
-
-.album_text-wrapper {
 }
