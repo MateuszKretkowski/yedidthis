@@ -38,7 +38,7 @@
     justify-content: space;
     align-items: center;
     flex-direction: column;
-    padding: 3% 12%;
+    padding: 1% 12%;
     margin-top: 2%;
     width: 90%;
     height: 90%;
@@ -63,6 +63,7 @@
     width: 150%;
     height: 2px;
     background-color: #d4d4d4;
+    transition: all 300ms ease;
 }
 
 .yeezy_title:after {
@@ -73,8 +74,144 @@
     width: 150%;
     height: 2px;
     background-color: #d4d4d4;
+    transition: all 300ms ease;
+
 }
+
+.yeezy_title:hover {
+    cursor: pointer;
+    letter-spacing: 5px;
+    font-size: 92px;
+}
+
+.yeezy_title:hover:before {
+    left: -170%;
+}
+.yeezy_title:hover:after {
+    left: 120%;
+}
+
+.yeezy_days-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 8%;
+    margin-top: 5%;
+}
+
+.yeezy_desc-wrapper {
+    margin: 4% 12px;
+}
+
+.yzy_p {
+    text-align: center;
+    font-size: 24px;
+    line-height: 0px;
+    font-family: "Oswald";
+}
+
+.yzy_p-1 {
+    letter-spacing: 1px;
+
+}
+
+.yzy_p-2 {
+    letter-spacing: 1px;
+}
+
+.yzy_p-3 {
+    position: relative;
+    letter-spacing: 1.5px;
+}
+
+.yzy_p-3:after {
+    content: "";
+    position: absolute;
+    top: 22px;
+    left: -5%;
+    width: 110%;
+    height: 3px;
+    background-color: white;
+    transition: all 300ms ease;
+}
+
+.yzy_p:hover {
+    cursor: default;
+}
+
+.yzy_p-3:hover {
+    letter-spacing: 2px;
+}
+
+.yzy_p-3:hover:after {
+    top: 25px;
+}
+
+
 
 /* YEEZY */
 
 /* Color Theme Swatches in RGBA */
+
+
+/* MODAL MODAL MODAL MODAL MODAL MODAL MODAL MODAL MODAL MODAL MODAL */
+
+.modal-backdrop {
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .8);
+}
+
+.modal-content-wrapper {
+    content: "";
+    position: absolute;
+    display: flex;
+    justify-content: start;
+    align-items: flex-start;
+    width: 1100px;
+    height: 700px;
+    border-radius: 8px;
+    z-index: 1;
+    background-color: rgba(255, 255, 255, 0.02);
+}
+
+.modal-content {
+    display: flex;
+}
+
+.modal-button-yzy {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 14vw;
+    overflow: hidden;
+    height: 24vh;
+    border-radius: 12px;
+    transform: scale(1);
+    transition: all 200ms ease;
+    z-index: -100;
+}
+
+.modal-button-yzy:hover {
+    border-radius: 4px;
+    transform: scale(1.2) translateY(-30px);
+}
+
+.button_img-yzy {
+    width: 100%;
+    height: auto;
+    transition: all 600ms ease;
+    border: 0.5px solid #7e9ac250;
+    border-radius: 14px;
+    transform: scale(1.1);
+}
+
+.button_img-yzy:hover {
+    transform: rotate(8deg);
+}
