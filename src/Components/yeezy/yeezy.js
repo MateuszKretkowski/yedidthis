@@ -6,7 +6,6 @@ import { motion, AnimatePresence, animate, stagger } from "framer-motion";
 import yeezyNews from "../../data/yeezyDayNews.js";
 import yeezyBG from "../../Images/yeezy_boots/blurryGradient.svg";
 import yeezyScrshot from "../../Images/yeezy_boots/blurry6.svg";
-import { wrap } from "popmotion";
 
 import yzy350_ashstone from "../../Images/yeezy_boots/yeezy350_ashstone.jpg";
 import yzy350_onyx from "../../Images/yeezy_boots/yeezy350_onyx.jpg";
@@ -79,43 +78,11 @@ function Yeezy() {
                 }}
                 className="modal-content-yzy"
               >
+              
                 <motion.div className="news_container">
-                  <motion.div className="yzy_modal_photo-collection">
-                    <AnimatePresence initial={false} custom={direction}>
-                      <motion.img
-                        key={page}
-                        src={yzyPhotos[imageIndex]}
-                        custom={direction}
-                        variants={variants}
-                        initial="enter"
-                        animate="center"
-                        exit="exit"
-                        transition={{
-                          x: { type: "spring", stiffness: 300, damping: 30 },
-                          opacity: { duration: 0.2 },
-                        }}
-                        drag="x"
-                        dragConstraints={{ left: 0, right: 0 }}
-                        dragElastic={1}
-                        onDragEnd={(e, { offset, velocity }) => {
-                          const swipe = swipePower(offset.x, velocity.x);
-
-                          if (swipe < -swipeConfidenceThreshold) {
-                            paginate(1);
-                          } else if (swipe > swipeConfidenceThreshold) {
-                            paginate(-1);
-                          }
-                        }}
-                      />
-                      <div className="next" onClick={() => paginate(1)}>
-                        {">"}
-                      </div>
-                      <div className="prev" onClick={() => paginate(-1)}>
-                        {"<>>"}
-                      </div>
-                    </AnimatePresence>
-                  </motion.div>
+                  
                 </motion.div>
+
               </motion.div>
             </motion.div>
           </div>
@@ -124,41 +91,6 @@ function Yeezy() {
     );
   };
 
-  const variants = {
-    enter: (direction: number) => {
-      return {
-        x: direction > 0 ? 1000 : -1000,
-        opacity: 0,
-      };
-    },
-    center: {
-      zIndex: 1,
-      x: 0,
-      opacity: 1,
-    },
-    exit: (direction: number) => {
-      return {
-        zIndex: 0,
-        x: direction < 0 ? 1000 : -1000,
-        opacity: 0,
-      };
-    },
-  };
-
-  const [[page, direction], setPage] = useState([0, 0]);
-
-  const paginate = (newDirection: number) => {
-    setPage([page + newDirection, newDirection]);
-  };
-
-  const swipeConfidenceThreshold = 10000;
-  const swipePower = (offset: number, velocity: number) => {
-    return Math.abs(offset) * velocity;
-  };
-
-  const yzyPhotos = [yzy350_ashstone, yzy350_onyx, yzy350_white];
-
-  const imageIndex = wrap(0, yzyPhotos.length, page);
 
   const [modalOpen, setModalOpen] = useState(
     Array(yeezyNews.length).fill(false)
@@ -217,7 +149,7 @@ function Yeezy() {
                 <Modal
                   isOpen={modalOpen[index]}
                   onClose={() => closeModal(index)}
-                   yeezyNews={News}
+                  yeezyNews={News}
                 />
               </div>
             ))}

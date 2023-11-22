@@ -31,34 +31,34 @@ const yeezyNews = [
       "3. yeezy slide white",
     ],
   },
-  {
-    id: 2,
-    imgClass: "yeezy_day-2",
-    imgSrc: yzy350_ashstone,
-    titleClass: "yzy_d-title-2",
-    title: "YEEZY Day: 2009",
-    descClass: "yzy_d-desc-2",
-    desc: "This was the first Yeezy day that happened on 2009",
-    boots: [
-      "1. yeezy 350 zebra",
-      "2. yeezy 350 onyx",
-      "3. yeezy slide white",
-    ],
-  },
-  {
-    id: 3,
-    imgClass: "yeezy_day-3",
-    imgSrc: yzy350_onyx,
-    titleClass: "yzy_d-title-3",
-    title: "YEEZY Day: 2009",
-    descClass: "yzy_d-desc-3",
-    desc: "This was the first Yeezy day that happened on 2009",
-    boots: [
-      "1. yeezy 350 zebra",
-      "2. yeezy 350 onyx",
-      "3. yeezy slide white",
-    ],
-  }
+  // {
+  //   id: 2,
+  //   imgClass: "yeezy_day-2",
+  //   imgSrc: yzy350_ashstone,
+  //   titleClass: "yzy_d-title-2",
+  //   title: "YEEZY Day: 2009",
+  //   descClass: "yzy_d-desc-2",
+  //   desc: "This was the first Yeezy day that happened on 2009",
+  //   boots: [
+  //     "1. yeezy 350 zebra",
+  //     "2. yeezy 350 onyx",
+  //     "3. yeezy slide white",
+  //   ],
+  // },
+  // {
+  //   id: 3,
+  //   imgClass: "yeezy_day-3",
+  //   imgSrc: yzy350_onyx,
+  //   titleClass: "yzy_d-title-3",
+  //   title: "YEEZY Day: 2009",
+  //   descClass: "yzy_d-desc-3",
+  //   desc: "This was the first Yeezy day that happened on 2009",
+  //   boots: [
+  //     "1. yeezy 350 zebra",
+  //     "2. yeezy 350 onyx",
+  //     "3. yeezy slide white",
+  //   ],
+  // }
 ]
 
 export default yeezyNews;
