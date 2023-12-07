@@ -3,6 +3,7 @@ import "./bibliography.css";
 import albums from "../../data/Albums/albums.js";
 import React, { useState } from "react";
 import { motion, AnimatePresence, animate, stagger } from "framer-motion";
+import Mbdtf from "../Spline Scenes/Mbdtf.js";
 
 function Biblio() {
   const [modalOpen, setModalOpen] = useState(Array(albums.length).fill(false));
@@ -214,6 +215,8 @@ function Biblio() {
       </AnimatePresence>
     );
   };
+
+  
 
   return (
     <div className="ow_container">
