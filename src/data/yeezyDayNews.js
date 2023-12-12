@@ -1,3 +1,5 @@
+
+
 import foamrnrs_brown from "../Images/yeezy_boots/foamrunners_brown.jpg";
 import foamrnrs_grey from "../Images/yeezy_boots/foamrunners_grey.jpg";
 import foamrnrs_red from "../Images/yeezy_boots/foamrunners_red.jpg";
@@ -16,6 +18,7 @@ import yzyslide_core from "../Images/yeezy_boots/yeezyslide_core.jpg";
 import yzyslide_onyx from "../Images/yeezy_boots/yeezyslide_onyx.jpg";
 import yzyslide_resin from "../Images/yeezy_boots/yeezyslide_resin.jpg";
 
+function yeezyday() {
 const yeezyNews = [
   {
     id: 1,
@@ -32,33 +35,36 @@ const yeezyNews = [
     ],
   },
   // {
-  //   id: 2,
-  //   imgClass: "yeezy_day-2",
-  //   imgSrc: yzy350_ashstone,
-  //   titleClass: "yzy_d-title-2",
-  //   title: "YEEZY Day: 2009",
-  //   descClass: "yzy_d-desc-2",
-  //   desc: "This was the first Yeezy day that happened on 2009",
-  //   boots: [
-  //     "1. yeezy 350 zebra",
-  //     "2. yeezy 350 onyx",
-  //     "3. yeezy slide white",
-  //   ],
-  // },
-  // {
-  //   id: 3,
-  //   imgClass: "yeezy_day-3",
-  //   imgSrc: yzy350_onyx,
-  //   titleClass: "yzy_d-title-3",
-  //   title: "YEEZY Day: 2009",
-  //   descClass: "yzy_d-desc-3",
-  //   desc: "This was the first Yeezy day that happened on 2009",
-  //   boots: [
-  //     "1. yeezy 350 zebra",
-  //     "2. yeezy 350 onyx",
-  //     "3. yeezy slide white",
-  //   ],
-  // }
-]
+    //   id: 2,
+    //   imgClass: "yeezy_day-2",
+    //   imgSrc: yzy350_ashstone,
+    //   titleClass: "yzy_d-title-2",
+    //   title: "YEEZY Day: 2009",
+    //   descClass: "yzy_d-desc-2",
+    //   desc: "This was the first Yeezy day that happened on 2009",
+    //   boots: [
+      //     "1. yeezy 350 zebra",
+      //     "2. yeezy 350 onyx",
+      //     "3. yeezy slide white",
+      //   ],
+      // },
+      // {
+        //   id: 3,
+        //   imgClass: "yeezy_day-3",
+        //   imgSrc: yzy350_onyx,
+        //   titleClass: "yzy_d-title-3",
+        //   title: "YEEZY Day: 2009",
+        //   descClass: "yzy_d-desc-3",
+        //   desc: "This was the first Yeezy day that happened on 2009",
+        //   boots: [
+          //     "1. yeezy 350 zebra",
+          //     "2. yeezy 350 onyx",
+          //     "3. yeezy slide white",
+          //   ],
+          // }
+        ]
+      }
 
-export default yeezyNews;
+      
+        
+        export default yeezyday;
