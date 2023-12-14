@@ -23,6 +23,8 @@
     height: 100vh;
     z-index: 1;
     background-color: #121214;
+    overflow: hidden;
+
 }
 
 .yeezy:after {
@@ -47,26 +49,8 @@
 }
 
 .yeezy-wrapper {
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    align-items: start;
-    flex-wrap: wrap-reverse;
-    height: 80%;
-    padding: 6% 0;
 }
 
-.yeezy_title-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 35%;
-    gap: 16px;
-    line-height: 40px;
-    letter-spacing: 0.8px;
-    text-align: center;
-}
 
 .yeezy_pboots_container {
     display: flex;
@@ -93,7 +77,70 @@
 }
 
 .slider-area {
+    position: relative;
+    width: 200%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider_row-1, .slider_row-2 {
+    display: flex;
+    justify-content: start;
+    align-items: center;
     width: 100%;
     height: 100%;
+    
+}
+
+.slider_row-1 {
+    background-color: blue;
+    animation: slideLeft 10s infinite linear;
+}
+
+@keyframes slideLeft {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes slideRight {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+.slider_row-2 {
     background-color: red;
+    animation: slideRight 10s infinite linear;
+}
+
+.slider_image {
+    background-color: blueviolet;
+    width: 350px;
+    height: 100%;
+    border: 1px solid white;
+}
+
+
+button {
+    width: 220px;
+    height: 50px;
+    background-color: transparent;
+    border: 2px solid white;
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-weight: 900;
+}
+
+button:hover {
+    background-color: white;
+    color: rgba(19, 19, 22, 1);
 }

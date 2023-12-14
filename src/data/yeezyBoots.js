@@ -18,8 +18,8 @@ import yzyslide_core from "../Images/yeezy_boots/yeezyslide_core.jpg";
 import yzyslide_onyx from "../Images/yeezy_boots/yeezyslide_onyx.jpg";
 import yzyslide_resin from "../Images/yeezy_boots/yeezyslide_resin.jpg";
 
-function yeezyday() {
-const yeezyNews = [
+function yeezyBootsApp() {
+const yeezyBoots = [
   {
     id: 1,
     imgClass: "yeezy_day-1",
@@ -67,4 +67,4 @@ const yeezyNews = [
 
       
         
-        export default yeezyday;
+        export default yeezyBootsApp;
