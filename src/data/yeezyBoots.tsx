@@ -1,32 +1,30 @@
 
+const foamrnrs_brown = require("../Images/yeezy_boots/foamrunners_brown.jpg");
+const foamrnrs_grey = require("../Images/yeezy_boots/foamrunners_grey.jpg");
+const foamrnrs_red = require("../Images/yeezy_boots/foamrunners_red.jpg");
+const yzy350_ashstone = require("../Images/yeezy_boots/yeezy350_ashstone.jpg");
+const yzy350_onyx = require("../Images/yeezy_boots/yeezy350_onyx.jpg");
+const yzy350_white = require("../Images/yeezy_boots/yeezy350_white.jpg");
+const yzy350_zebra = require("../Images/yeezy_boots/yeezy350_zebra.jpg");
+const yzy450_cloudwhite = require("../Images/yeezy_boots/yeezy450_cloudwhite.jpg");
+const yzy450_resin = require("../Images/yeezy_boots/yeezy450_resin.jpg");
+const yzy500_blush = require("../Images/yeezy_boots/yeezy500_blush.jpg");
+const yzy500_enflame = require("../Images/yeezy_boots/yeezy500_enflame.jpg");
+const yzy500_granite = require("../Images/yeezy_boots/yeezy500_granite.jpg");
+const yzy700_kyanite = require("../Images/yeezy_boots/yeezy700_kyanite.jpg");
+const yzy700_waverunner = require("../Images/yeezy_boots/yeezy700_waverunner.jpg");
+const yzyslide_core = require("../Images/yeezy_boots/yeezyslide_core.jpg");
+const yzyslide_onyx = require("../Images/yeezy_boots/yeezyslide_onyx.jpg");
+const yzyslide_resin = require("../Images/yeezy_boots/yeezyslide_resin.jpg");
 
-import foamrnrs_brown from "../Images/yeezy_boots/foamrunners_brown.jpg";
-import foamrnrs_grey from "../Images/yeezy_boots/foamrunners_grey.jpg";
-import foamrnrs_red from "../Images/yeezy_boots/foamrunners_red.jpg";
-import yzy350_ashstone from "../Images/yeezy_boots/yeezy350_ashstone.jpg";
-import yzy350_onyx from "../Images/yeezy_boots/yeezy350_onyx.jpg";
-import yzy350_white from "../Images/yeezy_boots/yeezy350_white.jpg";
-import yzy350_zebra from "../Images/yeezy_boots/yeezy350_zebra.jpg";
-import yzy450_cloudwhite from "../Images/yeezy_boots/yeezy450_cloudwhite.jpg";
-import yzy450_resin from "../Images/yeezy_boots/yeezy450_resin.jpg";
-import yzy500_blush from "../Images/yeezy_boots/yeezy500_blush.jpg";
-import yzy500_enflame from "../Images/yeezy_boots/yeezy500_enflame.jpg";
-import yzy500_granite from "../Images/yeezy_boots/yeezy500_granite.jpg";
-import yzy700_kyanite from "../Images/yeezy_boots/yeezy700_kyanite.jpg";
-import yzy700_waverunner from "../Images/yeezy_boots/yeezy700_waverunner.jpg";
-import yzyslide_core from "../Images/yeezy_boots/yeezyslide_core.jpg";
-import yzyslide_onyx from "../Images/yeezy_boots/yeezyslide_onyx.jpg";
-import yzyslide_resin from "../Images/yeezy_boots/yeezyslide_resin.jpg";
-
-function yeezyBootsApp() {
 const yeezyBoots = [
   {
     id: 1,
       imgClass: "yzy350_zebra",
       imgSrc: yzy350_zebra,
-      titleClass: "yzy_b_title-1",
+      titleClass: "yzy350_zebra_title",
       title: "Yeezy",
-      descClass: "yzy_b-desc-1",
+      descClass: "yzy350_zebra_desc",
       desc: "Yeezy 350v2 Zebra is an incredible sneaker",
     },
     {
@@ -137,8 +135,5 @@ const yeezyBoots = [
       descClass: "yzy700_kyanite-desc",
       desc: "Yeezy 700 Kyanite delivers a bold and dynamic look",
     },]
-}
-
-      
         
-        export default yeezyBootsApp;
+        export default yeezyBoots;
