@@ -4,6 +4,7 @@ import albums from "../../data/Albums/albums.js";
 import React, { useState } from "react";
 import { motion, AnimatePresence, animate, stagger } from "framer-motion";
 import Mbdtf from "../Spline Scenes/Mbdtf.js";
+import Yeezy from "../yeezy/yeezy.tsx"
 
 function Biblio() {
   const [modalOpen, setModalOpen] = useState(Array(albums.length).fill(false));
@@ -219,11 +220,14 @@ function Biblio() {
   
 
   return (
-    <div className="ow_container">
+    <div className="ow_container"
+    ref={Yeezy.ref}
+    >
       <div className="introduction-wrapper">
         <h1 className="section_title ye_text">YE</h1>
       </div>
-      <div className="albums_container">
+      <div className="albums_container"
+      >
         {albums.map((album, index) => (
           <div key={album.id}>
             <button

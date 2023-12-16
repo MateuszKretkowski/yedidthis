@@ -11,7 +11,8 @@ import yeBiblioBG from "./ye_section-bg.png";
 function App() {
 
   return (
-    <div className="container">
+    <div className="container"
+    >
       <div className="section">
       <NavBar />
         <img src={yeHeaderBG} className="ye_bg-header" />
