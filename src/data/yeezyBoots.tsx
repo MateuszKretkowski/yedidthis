@@ -1,10 +1,10 @@
-const foamrnrs_brown = require("../Images/yeezy_boots/foamrunners_brown.jpg");
-const foamrnrs_grey = require("../Images/yeezy_boots/foamrunners_grey.jpg");
+const foamrnrs_brown = require("../Images/yeezy_boots/yeez_foamrunners_big.webp");
+const yeezy_slide = require("../Images/yeezy_boots/yeez_slide_big.jpg");
 const foamrnrs_red = require("../Images/yeezy_boots/foamrunners_red.jpg");
 const yzy350_ashstone = require("../Images/yeezy_boots/yeezy350_ashstone.jpg");
 const yzy350_onyx = require("../Images/yeezy_boots/yeezy350_onyx.png");
 const yzy350_white = require("../Images/yeezy_boots/yeezy350_white.png");
-const yzy350_zebra = require("../Images/yeezy_boots/yeezy350_zebra.png");
+const yzy350_zebra = require("../Images/yeezy_boots/yeez350_zebra_big.jpg");
 const yzy450_cloudwhite = require("../Images/yeezy_boots/yeezy450_cloudwhite.jpg");
 const yzy450_resin = require("../Images/yeezy_boots/yeezy450_resin.jpg");
 const yzy500_blush = require("../Images/yeezy_boots/yeezy500_blush.jpg");
@@ -36,12 +36,12 @@ const yeezyBoots = [
   },
   {
     id: 3,
-    imgClass: "foamrnrs_grey",
-    imgSrc: foamrnrs_grey,
-    titleClass: "foamrnrs_grey_title",
-    title: "Foam Runners",
-    descClass: "foamrnrs_grey-desc",
-    desc: "Foam Runners in Grey are a perfect blend of fashion and function",
+    imgClass: "yeezy_slide",
+    imgSrc: yeezy_slide,
+    titleClass: "yeezy_slide_title",
+    title: "Yeezy Slide",
+    descClass: "yeezy_slide-desc",
+    desc: "yeezy_slide in Grey are a perfect blend of fashion and function",
     random: Math.floor(Math.random() * 10) + 1,
   },
   {

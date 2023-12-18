@@ -24,20 +24,16 @@
     z-index: 100000;
 }
 
-.yeezy:before,
-.yeezy:after {
+.yeezy:before {
   content: "";
   position: absolute;
   top: -30%;
   right: -20%;
+  background: rgb(20,20,23);
+  background: linear-gradient(0deg, rgba(20,20,23,1) 65%, rgba(27,27,31,0) 90%);
   bottom: 0;
   width: 150%;
   z-index: -1;
-}
-
-.yeezy:before {
-    background: rgb(20,20,23);
-    background: linear-gradient(0deg, rgba(20,20,23,1) 65%, rgba(27,27,31,0) 90%);
 }
 
 .yeezy_container:after {
@@ -59,19 +55,12 @@
     justify-content: start;
     gap: 15%;
     align-items: center;
-    width: 120%;
-    height: 80%;
+    width: 100%;
     z-index: 1;
+    background: rgb(20,20,23);
     position: relative;
     flex-direction: column;
     padding: 8% 10%;
-}
-
-.yeezy_container:before {
-
-}
-
-.yeezy-wrapper {
 }
 
 
@@ -80,12 +69,88 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 8vh;    
+    gap: 7vh;    
+}
+
+.yeezy_collections_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 5%;
+}
+
+.collection-wrapper {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    width: calc(70vw / 3);
+    margin: 0 30px;
+    height: 90vh;
+    padding: 2px 2px;
+}
+
+.collection-wrapper:hover .collection_title {
+    letter-spacing: 23px;
+}
+
+.collection_title {
+    font-size: 40px;
+    letter-spacing: 8px;
+    margin-left: 8px;
+}
+
+.title_container {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.collection_desc {
+    text-align: center;
+    font-size: 24px;
+}
+
+
+.collection_button {
+    height: 50px;
+    margin: 24px 0px;
+}
+figure {
+    width: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 12px;
+    z-index: 50;
+}
+
+img {
+    width: 200%;
+}
+
+.yzy350_zebra {
+    width: 205%;
+    padding-top: 20px;
+}
+
+.foamrnrs_brown {
+    width: 900px;
+    filter: saturate(1.3);
+}
+
+.yeezy_slide {
+    width: 250%;
+    filter: saturate(1.6);
 }
 
 
 button {
-    width: 220px;
+    width: 100%;
     height: 50px;
     background-color: transparent;
     border: 2px solid white;
