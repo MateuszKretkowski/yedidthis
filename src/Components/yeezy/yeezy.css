@@ -31,7 +31,7 @@
   top: -30%;
   right: -20%;
   background: rgb(20,20,23);
-  background: linear-gradient(0deg, rgba(20,20,23,1) 65%, rgba(27,27,31,0) 90%);
+  background: linear-gradient(0deg, rgba(20,20,23,1) 80%, rgba(27,27,31,0) 100%);
   bottom: 0;
   width: 150%;
   z-index: -1;

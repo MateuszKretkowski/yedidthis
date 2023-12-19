@@ -154,12 +154,23 @@ function Yeezy() {
     wrapper6: false,
   });
 
-  // Step 2: Handlers for mouse enter and leave for each wrapper
   const handleMouseEnter = (wrapperId: string) => {
-    setHoverStates({ ...hoverStates, [wrapperId]: true });
+    setHoverStates({
+      wrapper1: false,
+      wrapper2: false,
+      wrapper3: false,
+      wrapper4: false,
+      wrapper5: false,
+      wrapper6: false,
+      [wrapperId]: true
+    });
   };
+  
   const handleMouseLeave = (wrapperId: string) => {
-    setHoverStates({ ...hoverStates, [wrapperId]: false });
+    setHoverStates(prevStates => ({
+      ...prevStates,
+      [wrapperId]: false
+    }));
   };
 
 
@@ -255,9 +266,6 @@ function Yeezy() {
               </motion.div>
             </motion.div>
 
-
-
-
             <motion.div className="collection-wrapper"
               onMouseEnter={() => handleMouseEnter('wrapper4')}
               onMouseLeave={() => handleMouseLeave('wrapper4')}
@@ -278,7 +286,7 @@ function Yeezy() {
               initial={"initial"}
               animate={hoverStates['wrapper4'] ? "animate" : "initial"}
               >
-                <button className="collection_button">Read More About Yeezy 350v2</button>
+                <button className="collection_button">Read More About Yeezy 450v2</button>
                 <h4 className="collection_desc">Unique, web-like structure on the midsole, upper primeknit for comfort and style.</h4>
               </motion.div>
             </motion.div>
