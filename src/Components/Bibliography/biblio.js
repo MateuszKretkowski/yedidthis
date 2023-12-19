@@ -221,7 +221,6 @@ function Biblio() {
 
   return (
     <div className="ow_container"
-    ref={Yeezy.ref}
     >
       <div className="introduction-wrapper">
         <h1 className="section_title ye_text">YE</h1>

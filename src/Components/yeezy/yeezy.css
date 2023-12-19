@@ -21,6 +21,7 @@
     align-items: center;
     width: 100vw;
     height: 200vh;
+    margin-top: 30vh;
     z-index: 100000;
 }
 
@@ -53,9 +54,10 @@
 .yeezy_container {
     display: flex;
     justify-content: start;
-    gap: 15%;
+    gap: 16px;
     align-items: center;
     width: 100%;
+    height: 116%;
     z-index: 1;
     background: rgb(20,20,23);
     position: relative;
@@ -70,6 +72,10 @@
     align-items: center;
     flex-direction: column;
     gap: 7vh;    
+}
+
+.title_button {
+    width: 50%;
 }
 
 .yeezy_collections_container {
@@ -87,6 +93,7 @@
     flex-direction: column;
     width: calc(70vw / 3);
     margin: 0 30px;
+    margin-bottom: 24px;
     height: 90vh;
     padding: 2px 2px;
 }
@@ -94,11 +101,31 @@
 .collection-wrapper:hover .collection_title {
     letter-spacing: 23px;
 }
+.collection-wrapper:hover .collection_title_reversed {
+    padding-top: 24px;
+}
 
 .collection_title {
     font-size: 40px;
     letter-spacing: 8px;
     margin-left: 8px;
+}
+
+.title_4 {
+    padding-top: 12px;
+}
+
+.yzy450_cloudwhite {
+    height: 100%;
+}
+
+.yzy700_kyanite {
+    height: 100%;
+}
+
+.yzy500_granite {
+    width: 300%;
+    height: 100%;
 }
 
 .title_container {
@@ -114,6 +141,13 @@
     font-size: 24px;
 }
 
+.desc_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
 
 .collection_button {
     height: 50px;
@@ -121,6 +155,7 @@
 }
 figure {
     width: 450px;
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -141,6 +176,14 @@ img {
 .foamrnrs_brown {
     width: 900px;
     filter: saturate(1.3);
+}
+
+.collection-wrapper:hover .frnrs_title {
+    letter-spacing: 17px !important;
+}
+
+.collection-wrapper:hover figure {
+    transform: scale(1.1) !important;
 }
 
 .yeezy_slide {

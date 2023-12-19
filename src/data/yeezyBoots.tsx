@@ -5,12 +5,12 @@ const yzy350_ashstone = require("../Images/yeezy_boots/yeezy350_ashstone.jpg");
 const yzy350_onyx = require("../Images/yeezy_boots/yeezy350_onyx.png");
 const yzy350_white = require("../Images/yeezy_boots/yeezy350_white.png");
 const yzy350_zebra = require("../Images/yeezy_boots/yeez350_zebra_big.jpg");
-const yzy450_cloudwhite = require("../Images/yeezy_boots/yeezy450_cloudwhite.jpg");
+const yzy450_cloudwhite = require("../Images/yeezy_boots/yeez_450_big.jpeg");
 const yzy450_resin = require("../Images/yeezy_boots/yeezy450_resin.jpg");
 const yzy500_blush = require("../Images/yeezy_boots/yeezy500_blush.jpg");
 const yzy500_enflame = require("../Images/yeezy_boots/yeezy500_enflame.jpg");
-const yzy500_granite = require("../Images/yeezy_boots/yeezy500_granite.jpg");
-const yzy700_kyanite = require("../Images/yeezy_boots/yeezy700_kyanite.jpg");
+const yzy500_granite = require("../Images/yeezy_boots/yeez_500_big.webp");
+const yzy700_kyanite = require("../Images/yeezy_boots/yeez_750v3_big.webp");
 
 const yeezyBoots = [
   {
