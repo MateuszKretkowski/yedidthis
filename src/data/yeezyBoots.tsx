@@ -10,7 +10,7 @@ const yzy450_resin = require("../Images/yeezy_boots/yeezy450_resin.jpg");
 const yzy500_blush = require("../Images/yeezy_boots/yeezy500_blush.jpg");
 const yzy500_enflame = require("../Images/yeezy_boots/yeezy500_enflame.jpg");
 const yzy500_granite = require("../Images/yeezy_boots/yeez_500_big.webp");
-const yzy700_kyanite = require("../Images/yeezy_boots/yeez_750v3_big.webp");
+const yzy700_kyanite = require("../Images/yeezy_boots/podspinning.webp");
 
 const yeezyBoots = [
   {

@@ -126,7 +126,7 @@ const collectionTitleVariant = {
     y: 0
   },
   animate: {
-    y: -700,
+    y: -770,
     transition: { 
     duration: 0.3,         
     type: "spring",
@@ -177,12 +177,13 @@ function Yeezy() {
   return (
     <AnimatePresence>
       <motion.div className="yeezy" style={{ translateX: scrollYProgress }}
+      id="yeezy"
       >
         <div className="yeezy_container">
           <div className="yeezy-wrapper">
             <div className="title_wrapper">
               <h1>The Most Popular Yeezy Collections</h1>
-              <button className="title_button">Read More About Yeezy</button>
+              <button className="title_button"  style={{ opacity: hoverStates['wrapper2'] ? 0 : 1 }}><a href={'https://www.yeezy.com/'} target="_blank">Read More About Yeezy</a></button>
             </div>
           </div>
           <div className="yeezy_collections_container">
@@ -200,7 +201,7 @@ function Yeezy() {
               initial={"initial"}
               animate={hoverStates['wrapper1'] ? "animate" : "initial"}
               >
-                <h1 className="collection_title">Yeezy 350v2</h1>
+                <h1 className="collection_title">YEEZY 350V2</h1>
               </motion.div>
               <motion.div className="desc_container"
               variants={collectionDescVariant}
@@ -208,7 +209,6 @@ function Yeezy() {
               animate={hoverStates['wrapper1'] ? "animate" : "initial"}
               >
                 <h4 className="collection_desc">Yeezy 350v2 is the most recognizable shoe in the World. Designed by Kanye West, Created by Adidas</h4>
-                <button className="collection_button">Read More About Yeezy 350v2</button>
               </motion.div>
             </motion.div>
 
@@ -234,8 +234,7 @@ function Yeezy() {
               initial={"initial"}
               animate={hoverStates['wrapper2'] ? "animate" : "initial"}
               >
-                <h4 className="collection_desc">Futuristic, lightweight shoes designed by Kanye West, made from foam with unique breathable cuts</h4>
-                <button className="collection_button">Read More About YZY FOAMRUNNERS</button>
+                <h4 className="collection_desc">Futuristic, lightweight shoes designed by Kanye West, made from EVA foam with unique breathable cut-outs.</h4>
               </motion.div>
             </motion.div>
 
@@ -254,15 +253,14 @@ function Yeezy() {
               initial={"initial"}
               animate={hoverStates['wrapper3'] ? "animate" : "initial"}
               >
-                <h1 className="collection_title frnrs_title">Yeezy Slides</h1>
+                <h1 className="collection_title frnrs_title">YEEZY SLIDES</h1>
               </motion.div>
               <motion.div className="desc_container"
               variants={collectionDescVariant}
               initial={"initial"}
               animate={hoverStates['wrapper3'] ? "animate" : "initial"}
               >
-                <h4 className="collection_desc">Minimalist, comfortable slides, crafted from soft EVA foam for casual, stylish wear.</h4>
-                <button className="collection_button">Read More About Yeezy Slides</button>
+                <h4 className="collection_desc">Futuristic, lightweight shoes designed by Kanye West, made from EVA foam with unique breathable cut-outs.</h4>
               </motion.div>
             </motion.div>
 
@@ -279,15 +277,14 @@ function Yeezy() {
               initial={"initial"}
               animate={hoverStates['wrapper4'] ? "initial" : "animate"}
               >
-                <h1 className="collection_title collection_title_reversed">Yeezy 450v2</h1>
+                <h1 className="collection_title collection_title_reversed">YEEZY 450V2</h1>
               </motion.div>
               <motion.div className="desc_container"
               variants={collectionDescVariantReversed}
               initial={"initial"}
               animate={hoverStates['wrapper4'] ? "animate" : "initial"}
               >
-                <button className="collection_button">Read More About Yeezy 450v2</button>
-                <h4 className="collection_desc">Unique, web-like structure on the midsole, upper primeknit for comfort and style.</h4>
+                <h4 className="collection_desc">Avant-garde shoes with a unique, web-like structure on the midsole, blending with a primeknit upper for comfort and style</h4>
               </motion.div>
             </motion.div>
 
@@ -297,22 +294,21 @@ function Yeezy() {
               style={{ scale: scrollYProgress }}
             >
               <motion.figure>
-                <motion.img src={yeezyBoots[11].imgSrc} className={"img " + yeezyBoots[11].imgClass} />
+                <motion.img src={yeezyBoots[12].imgSrc} className={"img " + yeezyBoots[12].imgClass} />
               </motion.figure>
               <motion.div className="title_container title_4"
               variants={collectionTitleVariant}
               initial={"initial"}
               animate={hoverStates['wrapper5'] ? "initial" : "animate"}
               >
-                <h1 className="collection_title collection_title_reversed">Yeezy 500</h1>
+                <h1 className="collection_title collection_title_reversed">YEEZY 500</h1>
               </motion.div>
               <motion.div className="desc_container"
               variants={collectionDescVariantReversed}
               initial={"initial"}
               animate={hoverStates['wrapper5'] ? "animate" : "initial"}
               >
-                <button className="collection_button">Read More About Yeezy 500</button>
-                <h4 className="collection_desc">Retro silhouette sneakers with mesh adiPRENE+ cushioning for additional comfort.</h4>
+                <h4 className="collection_desc">Retro, chunky silhouette sneakers combining suede, leather, and mesh with adiPRENE+ cushioning for style and comfort.</h4>
               </motion.div>
             </motion.div>
 
@@ -322,22 +318,21 @@ function Yeezy() {
               style={{ scale: scrollYProgress }}
             >
               <motion.figure>
-                <motion.img src={yeezyBoots[12].imgSrc} className={"img " + yeezyBoots[12].imgClass} />
+              <motion.img src={yeezyBoots[11].imgSrc} className={"img " + yeezyBoots[11].imgClass} />
               </motion.figure>
               <motion.div className="title_container collection_title_reversed title_4"
               variants={collectionTitleVariant}
               initial={"initial"}
               animate={hoverStates['wrapper6'] ? "initial" : "animate"}
               >
-                <h1 className="collection_title">Yeezy 750v3</h1>
+                <h1 className="collection_title">YEEZY 500</h1>
               </motion.div>
               <motion.div className="desc_container"
               variants={collectionDescVariantReversed}
               initial={"initial"}
               animate={hoverStates['wrapper6'] ? "animate" : "initial"}
               >
-                <button className="collection_button">Read More About Yeezy 750v3</button>
-                <h4 className="collection_desc">Sleek, high-top sneakers. Unique strap and zipper design for a high-fashion look.</h4>
+                <h4 className="collection_desc">Retro, chunky silhouette sneakers combining suede, leather, and mesh with adiPRENE+ cushioning for style and comfort.</h4>
               </motion.div>
             </motion.div>
 

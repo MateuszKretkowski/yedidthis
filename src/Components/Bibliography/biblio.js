@@ -226,6 +226,7 @@ function Biblio() {
         <h1 className="section_title ye_text">YE</h1>
       </div>
       <div className="albums_container"
+        id="biblio"
       >
         {albums.map((album, index) => (
           <div key={album.id}>
