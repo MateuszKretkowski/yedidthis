@@ -22,7 +22,7 @@
 z-index: 1;
 }
 
-.container {
+.footer-container {
     padding-top: 75px;
 }
 
@@ -30,9 +30,10 @@ z-index: 1;
     margin-bottom: 24px;
 }
 
-.ye_logo {
+.ye_logo-footer {
     width: 60%;
     height: 50%;
+    filter: invert(1) blur(0.5px); 
 }
 
 .title_container:hover {

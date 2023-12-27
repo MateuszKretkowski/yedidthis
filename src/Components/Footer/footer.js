@@ -21,9 +21,9 @@ function Footer() {
 
     return(
         <div className="footer">
-            <div className="container">
+            <div className="footer-container">
                 <div className="title_container">
-                    <a href={'#navbar'}><img src={yeLogo} className="ye_logo"  /></a>
+                    <a href={'#navbar'}><img src={yeLogo} className="ye_logo-footer" /></a>
                 </div>
 
                 <div><h5>DESIGNED & CODED BY MATEUSZ KRETKOWSKI</h5></div>
