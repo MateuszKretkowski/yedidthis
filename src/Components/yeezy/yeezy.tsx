@@ -267,7 +267,7 @@ function Yeezy() {
             <motion.div className="collection-wrapper"
               onMouseEnter={() => handleMouseEnter('wrapper4')}
               onMouseLeave={() => handleMouseLeave('wrapper4')}
-              style={{ scale: scrollYProgress }}
+              style={{ scale: scrollYProgress, opacity: hoverStates['wrapper5'] ? "0.35" : "1" }}
             >
               <motion.figure>
                 <motion.img src={yeezyBoots[7].imgSrc} className={"img " + yeezyBoots[7].imgClass} />
@@ -288,34 +288,36 @@ function Yeezy() {
               </motion.div>
             </motion.div>
 
-            <motion.div className="collection-wrapper"
+            <motion.div className="collection-wrapper yzypods"
               onMouseEnter={() => handleMouseEnter('wrapper5')}
               onMouseLeave={() => handleMouseLeave('wrapper5')}
               style={{ scale: scrollYProgress }}
             >
-              <motion.figure>
+              <motion.figure className="yzypod_figure">
                 <motion.img src={yeezyBoots[12].imgSrc} className={"img " + yeezyBoots[12].imgClass} />
               </motion.figure>
-              <motion.div className="title_container title_4"
+              <motion.div className="title_container"
               variants={collectionTitleVariant}
-              initial={"initial"}
-              animate={hoverStates['wrapper5'] ? "initial" : "animate"}
-              >
-                <h1 className="collection_title collection_title_reversed">YEEZY 500</h1>
-              </motion.div>
-              <motion.div className="desc_container"
-              variants={collectionDescVariantReversed}
+              style={{ opacity: hoverStates['wrapper3'] ? 0 : 1, scale: hoverStates['wrapper3'] ? 0 : 1 }}
+
               initial={"initial"}
               animate={hoverStates['wrapper5'] ? "animate" : "initial"}
               >
-                <h4 className="collection_desc">Retro, chunky silhouette sneakers combining suede, leather, and mesh with adiPRENE+ cushioning for style and comfort.</h4>
+                <h1 className="collection_title yzypod_title">YZY PODS</h1>
+              </motion.div>
+              <motion.div className="desc_container"
+              variants={collectionDescVariant}
+              initial={"initial"}
+              animate={hoverStates['wrapper5'] ? "animate" : "initial"}
+              >
+                <h4 className="collection_desc">Controversial, Innovative Yeezy Pods. Ye is releasing them in 2024, with the release of Vultures, Ye's return.</h4>
               </motion.div>
             </motion.div>
 
             <motion.div className="collection-wrapper"
               onMouseEnter={() => handleMouseEnter('wrapper6')}
               onMouseLeave={() => handleMouseLeave('wrapper6')}
-              style={{ scale: scrollYProgress }}
+              style={{ scale: scrollYProgress, opacity: hoverStates['wrapper5'] ? "0.35" : "1"  }}
             >
               <motion.figure>
               <motion.img src={yeezyBoots[11].imgSrc} className={"img " + yeezyBoots[11].imgClass} />

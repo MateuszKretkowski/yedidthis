@@ -194,5 +194,13 @@ h4 {
     scroll-margin-top: -330px;
 }
 
+/* Styl dla klasycznych ekranów (monitory, MacBooki) */
+@media screen and (max-width: 1919px) {
+    body {
+        display: none;
+    }
+}
+
+
 /* OVERVIEW */
 

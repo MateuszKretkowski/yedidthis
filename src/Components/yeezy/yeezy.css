@@ -95,7 +95,6 @@
     margin: 0 30px;
     margin-bottom: 24px;
     height: 90vh;
-    padding: 2px 2px;
 }
 
 .collection-wrapper:hover .collection_title {
@@ -109,6 +108,43 @@
     font-size: 40px;
     letter-spacing: 8px;
     margin-left: 8px;
+}
+
+.yzypod_figure {
+    position: relative;
+    height: 70%;
+    width: 100%;
+}
+
+.yzypods:hover {
+    transform: scale(1.18) !important;
+}
+
+.yzypods:hover .yzypod_title {
+    margin-bottom: -100px;
+}
+
+.yzypods {
+    position: relative;
+}
+
+.yzy700_kyanite {
+}
+
+.fancy {
+    letter-spacing: 16px;
+    border: 4px solid #edede1;
+    border-radius: 12px;
+    padding: 12px 12px;
+}
+
+.yzypod_figure:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-color: #edede1;
 }
 
 .title_4 {
