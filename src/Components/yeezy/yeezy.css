@@ -12,7 +12,6 @@
     margin: 0;
 }
 
-/* YEEZY */
 
 .yeezy {
     position: relative;
@@ -21,7 +20,7 @@
     align-items: center;
     width: 100vw;
     height: 200vh;
-    margin-top: 30vh;
+    margin-top: 70vh;
     z-index: 100000;
 }
 
@@ -46,7 +45,6 @@
     height: 100%;
     background-image: url("../../Images/noise.webp");
     background-size: 600px;
-    border-radius: 4%;
     z-index: -1;
 }
 

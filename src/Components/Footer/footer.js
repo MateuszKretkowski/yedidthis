@@ -27,9 +27,9 @@ function Footer() {
                 </div>
 
                 <div><h5>DESIGNED & CODED BY MATEUSZ KRETKOWSKI</h5></div>
-                <div><a href={'https://mateuszkretkowski.github.io/Final-Portfolio/#'} target="_blank"><h5>CONTACT MATEUSZ</h5></a></div>
-                <div><a href={'https://twitter.com/kanyewest'} target="_blank"><h5>YE'S TWITTER</h5></a></div>
-            </div>
+                <div className="link-footer"><a href={'mateuszkretkowski-74dcb.web.app'} target="_blank"><h5>CONTACT MATEUSZ</h5></a></div>
+                <div className="link-footer"><a href={'https://twitter.com/kanyewest'} target="_blank"><h5>YE'S TWITTER</h5></a></div>
+            </div> 
         </div>
     )
 };

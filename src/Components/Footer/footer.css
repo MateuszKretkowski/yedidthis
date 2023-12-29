@@ -3,7 +3,7 @@
     display: flex;
     justify-content: start;
     padding: 12px calc(100vh / 4.2);
-    align-items: center;
+    align-items: flex-end;
     width: 100vw;
     height: 45vh;
     background-color: #141416;
@@ -40,6 +40,10 @@ z-index: 1;
     transform: scale(1.2);
 }
 
+
+.link-footer {
+    padding-top: 4px;
+}
 
 h5 {
     font-size: 16px;
