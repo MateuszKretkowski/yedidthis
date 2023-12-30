@@ -229,7 +229,7 @@ function Biblio() {
         id="biblio"
       >
         {albums.map((album, index) => (
-          <div key={album.id}>
+          <div className="button-wrapper" key={album.id}>
             <button
               onClick={() => openModal(index)}
               className={`modal-button${modalOpen[index] ? " hidden" : ""}`}

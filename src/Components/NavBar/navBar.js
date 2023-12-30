@@ -8,7 +8,7 @@ import {Link} from 'react-router-dom';
 function NavBar() {
 
   return (
-    <div className="navBar">
+    <div className="navBar" id="navbar">
       <div className="navBar_container">
 
       <button className="button">

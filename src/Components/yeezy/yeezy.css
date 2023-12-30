@@ -19,7 +19,6 @@
     justify-content: center;
     align-items: center;
     width: 100vw;
-    height: 200vh;
     margin-top: 70vh;
     z-index: 100000;
 }
@@ -28,11 +27,11 @@
   content: "";
   position: absolute;
   top: -30%;
-  right: -20%;
+  right: 0%;
   background: rgb(20,20,23);
   background: linear-gradient(0deg, rgba(20,20,23,1) 80%, rgba(27,27,31,0) 100%);
   bottom: 0;
-  width: 150%;
+  width: 100%;
   z-index: -1;
 }
 
@@ -89,10 +88,9 @@
     justify-content: flex-start;
     align-items: center;
     flex-direction: column;
-    width: calc(70vw / 3);
+    width: calc(36vw);
     margin: 0 30px;
     margin-bottom: 24px;
-    height: 90vh;
 }
 
 .collection-wrapper:hover .collection_title {
@@ -110,7 +108,7 @@
 
 .yzypod_figure {
     position: relative;
-    height: 70%;
+    height: 100%;
     width: 100%;
 }
 
@@ -118,13 +116,15 @@
     transform: scale(1.18) !important;
 }
 
-.yzypods:hover .yzypod_title {
-    margin-bottom: -100px;
-}
 
 .yzypods {
     position: relative;
 }
+
+.yzypod_title {
+    margin-top: 32px;
+}
+
 
 .yzy700_kyanite {
 }
@@ -150,7 +150,7 @@
 }
 
 .yzy450_cloudwhite {
-    height: 100%;
+    height: 60vh;
 }
 
 .yzy700_kyanite {

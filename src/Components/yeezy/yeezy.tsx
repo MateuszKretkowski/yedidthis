@@ -182,7 +182,7 @@ function Yeezy() {
         <div className="yeezy_container">
           <div className="yeezy-wrapper">
             <div className="title_wrapper">
-              <h1>The Most Popular Yeezy Collections</h1>
+              <h1>The Most Iconic Yeezy Collections</h1>
               <button className="title_button"  style={{ opacity: hoverStates['wrapper2'] ? 0 : 1 }}><a href={'https://www.yeezy.com/'} target="_blank">Read More About Yeezy</a></button>
             </div>
           </div>
@@ -190,7 +190,7 @@ function Yeezy() {
             <motion.div className="collection-wrapper"
               onMouseEnter={() => handleMouseEnter('wrapper1')}
               onMouseLeave={() => handleMouseLeave('wrapper1')}
-              style={{ scale: scrollYProgress }}
+              style={{ scale: scrollYProgress, opacity: hoverStates['wrapper5'] ? "0.35" : "1"   }}
             >
               <motion.figure>
                 <motion.img src={yeezyBoots[0].imgSrc} className={"img " + yeezyBoots[0].imgClass} />
@@ -215,7 +215,7 @@ function Yeezy() {
             <motion.div className="collection-wrapper"
               onMouseEnter={() => handleMouseEnter('wrapper2')}
               onMouseLeave={() => handleMouseLeave('wrapper2')}
-              style={{ scale: scrollYProgress }}
+              style={{ scale: scrollYProgress, opacity: hoverStates['wrapper5'] ? "0.35" : "1"   }}
             >
               <motion.figure>
                 <motion.img src={yeezyBoots[1].imgSrc} className={"img " + yeezyBoots[1].imgClass} />
@@ -241,7 +241,7 @@ function Yeezy() {
             <motion.div className="collection-wrapper"
               onMouseEnter={() => handleMouseEnter('wrapper3')}
               onMouseLeave={() => handleMouseLeave('wrapper3')}
-              style={{ scale: scrollYProgress }}
+              style={{ scale: scrollYProgress, opacity: hoverStates['wrapper5'] ? "0.35" : "1"   }}
             >
               <motion.figure>
                 <motion.img src={yeezyBoots[2].imgSrc} className={"img " + yeezyBoots[2].imgClass} />
@@ -260,7 +260,7 @@ function Yeezy() {
               initial={"initial"}
               animate={hoverStates['wrapper3'] ? "animate" : "initial"}
               >
-                <h4 className="collection_desc">Futuristic, lightweight shoes designed by Kanye West, made from EVA foam with unique breathable cut-outs.</h4>
+                <h4 className="collection_desc">Futuristic, lightweight shoes designed by Kanye West, made from EVA foam with unique cut-outs.</h4>
               </motion.div>
             </motion.div>
 
@@ -298,15 +298,14 @@ function Yeezy() {
               </motion.figure>
               <motion.div className="title_container"
               variants={collectionTitleVariant}
-              style={{ opacity: hoverStates['wrapper3'] ? 0 : 1, scale: hoverStates['wrapper3'] ? 0 : 1 }}
 
               initial={"initial"}
-              animate={hoverStates['wrapper5'] ? "animate" : "initial"}
+              animate={hoverStates['wrapper5'] ? "initial" : "animate"}
               >
-                <h1 className="collection_title yzypod_title">YZY PODS</h1>
+                <h1 className="collection_title collection_title_reversed yzypod_title">YZY PODS</h1>
               </motion.div>
               <motion.div className="desc_container"
-              variants={collectionDescVariant}
+              variants={collectionDescVariantReversed}
               initial={"initial"}
               animate={hoverStates['wrapper5'] ? "animate" : "initial"}
               >
