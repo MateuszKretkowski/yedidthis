@@ -49,6 +49,15 @@ header:after {
     }
 }
 
+@media (min-width: 431px) {
+    .button {
+        display: flex !important;
+    }
+    .ye_logo {
+        width: 100px !important;
+        height: 100% !important;
+    }
+}
 .navbar_link:hover {
     text-shadow: 0px 0px 8px rgb(255, 255, 255);
     transform: scale(1.1);

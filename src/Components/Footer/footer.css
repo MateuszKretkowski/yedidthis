@@ -49,3 +49,24 @@ h5 {
     font-size: 16px;
     margin-bottom: -2px;
 }
+
+@media (max-width: 431px) {
+    .footer {
+        height: 35vh;
+        padding: 12px 22px;
+        display: flex;
+        justify-content: start;
+        align-items: flex-start;
+
+    }
+    a {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+    }
+    .footer:after {
+        top: 0;
+    }
+    .footer-container {
+    }
+}

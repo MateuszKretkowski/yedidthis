@@ -41,3 +41,22 @@ header:after {
     font-family: 'Shantell Sans', cursive;
     margin-bottom: 15%;
 }
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    text-align: center;
+}
+
+h3 {
+    font-size: 20px;
+    margin: 24px 24px;
+    filter: blur(0.55px);
+}
+
+@media (min-width: 431px) {
+    h3 {
+        display: none;
+    }
+}

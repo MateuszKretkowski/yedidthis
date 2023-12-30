@@ -24,7 +24,6 @@
     display: flex;
     justify-content: center;
     align-items: start;
-    padding-top: 30vh;
 }
 
 .ow_container {
@@ -33,7 +32,7 @@
     align-items: center;
     flex-direction: column;
     gap: 30vh;
-    margin-top: 16vh;
+    margin: 45.5vh 0;
 }
 
 .albums_container {
@@ -42,6 +41,7 @@
     align-items: center;
     flex-wrap: wrap;
     width: 80%;
+    margin-bottom: 10%;
 }
 
 .album {
@@ -52,15 +52,14 @@
 
 
 .album_vinyl {
-    width: 45%;
+    width: 30%;
     height: auto;
     border-radius: 8px;
-
     z-index: 5;
 }
 
 .album_cd {
-    width: 45%;
+    width: 30%;
     height: auto;
     top: 0%;
     left: 0%;
@@ -84,9 +83,8 @@
     display: flex;
     justify-content: start;
     align-items: center;
-    width: 65%;
-    height: 400px;
-    padding: 24px 24px;
+    width: 100%;
+    padding: 0px 24px;
     z-index: -1;
 }
 
@@ -95,11 +93,10 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 12px 12px;
     margin-top: 34px;
     gap: 20px;
     width: 65%;
-    height: 296px;
+    height: 300px;
 }
 
 .album_subtitle {
@@ -157,12 +154,12 @@
 .modal-content-wrapper {
     content: "";
     position: absolute;
-    top: 144vh;
-    left: 21%;
     display: flex;
     justify-content: start;
     align-items: flex-start;
     width: 1100px;
+    left: 25%;
+    top: 150%;
     height: 700px;
     border-radius: 8px;
     z-index: 1;
@@ -175,7 +172,7 @@
 
 .modal-button {
     width: 100%;
-    height: 96px;
+    height: 200px;
     border-radius: 120px;
     transform: scale(1);
     transition: all 200ms ease;
@@ -183,7 +180,7 @@
 }
 
 .modal-button:hover {
-    transform:  scale(1.3);
+    transform: scale(1.3);
 }
 
 .button_img {
@@ -200,18 +197,75 @@
 }
 
 @media (max-width: 431px) {
+    .modal-backdrop {
+        height: 150vh;
+    }
     .button-wrapper {
-        width: 44%;
+        width: 34%;
         display: flex;
         justify-content: center;
         align-items: center;
     }
     .ow_container {
         display: flex;
+        justify-content: center;
+        align-items: center;
         flex-wrap: wrap;
     }
     .modal-button {
-        width: 80%;
-        height: 80%;
+        width: 100%;
+        height: 100%;
     }
+    .ow_container {
+    margin: 15.5vh 0;
+    }
+    .modal-button {
+        z-index: 0;
+    }
+    .modal-content-wrapper {
+        width: 92vw;
+        left: 0;
+        top: 100%;
+        height: 250vh;
+    }
+    .album_vinyl {
+        width: 52%;
+    }
+    .album_cd {
+        width: 55%;
+        margin-left: -50px;
+    }
+    .album {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .album_text-wrapper {
+        height: 60%;
+        width: 100%;
+        margin-top: 40px;
+    }
+    .tracklist_container {
+        position: relative; /* Change position to relative */
+        left: 0; /* Reset left position */
+        width: 100%; /* Set width to full container */
+        top: auto; /* Reset top position */
+        margin-top: 54px;
+    }
+    .tracklist_title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 32px;
+        letter-spacing: 4px;
+    }
+    .tracklist_track-wrapper {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin-top: 12px;
+    }
+
 }

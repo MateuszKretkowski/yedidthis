@@ -182,11 +182,13 @@ function Biblio() {
                         duration: 0.3,
                         delay: 1,
                         when: "beforeChildren",
-                        staggerChildren: 0.5, // Dodaj opóźnienie 0.5 sekundy między animacjami każdego dziecka (utworu)
+                        staggerChildren: 0.5,
                       },
                     }}
                   >
                     <h1 className={"tracklist_title"}>Tracklist</h1>
+                    <div className="tracklist_track-wrapper">
+
                     {album.tracks.map((track, index) => (
                       <motion.div
                         key={index}
@@ -207,6 +209,7 @@ function Biblio() {
                         ></p>
                       </motion.div>
                     ))}
+                    </div>
                   </motion.div>
                 </div>
               </motion.div>

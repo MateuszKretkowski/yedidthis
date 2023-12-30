@@ -20,8 +20,8 @@ function App() {
         <HeaderSection />  
       </div>
       <div className="section sect2">
-        <img src={yeBiblioBG} className="ye_bg inverted" />
-        <img src={yeBiblioBG} className="ye_bg nextone" />
+        <img className="ye_bg inverted" />
+        <img className="ye_bg nextone" />
         <Biblio />
       </div>
         <Yeezy />
