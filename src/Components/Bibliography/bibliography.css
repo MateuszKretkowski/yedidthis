@@ -20,19 +20,17 @@
 .ow {
     position: relative;
     width: 100vw;
-    height: 100%;
+    height: 100vh;
     display: flex;
     justify-content: center;
-    align-items: start;
+    align-items: center;
 }
 
 .ow_container {
     display: flex;
-    justify-content: start;
     align-items: center;
     flex-direction: column;
-    gap: 30vh;
-    margin: 45.5vh 0;
+    margin: 60.5vh 0;
 }
 
 .albums_container {
@@ -41,7 +39,12 @@
     align-items: center;
     flex-wrap: wrap;
     width: 80%;
-    margin-bottom: 10%;
+}
+
+.vultures_title {
+}
+
+.vultures_buttonClass_img {
 }
 
 .album {
@@ -96,7 +99,21 @@
     margin-top: 34px;
     gap: 20px;
     width: 65%;
-    height: 300px;
+    height: 400px;
+}
+
+.vultures_buttonClass {
+    -webkit-box-shadow: 0 7.5px 20px 7px #dcd2c7;
+-moz-box-shadow: 0 7.5px 20px 7px #dcd2c7;
+box-shadow: 0 7.5px 20px 7px #dcd2c7;
+transition: all 300ms ease 50ms;
+}
+
+.vultures_buttonClass:hover {
+    -webkit-box-shadow: 0 7.5px 32px 32px #dcd2c7;
+-moz-box-shadow: 0 7.5px 32px 32px #dcd2c7;
+box-shadow: 0 7.5px 32px 32px #dcd2c7;
+transform: scale(1.3);
 }
 
 .album_subtitle {
@@ -140,6 +157,25 @@
     font-weight: 500;
 }
 
+.vultures_buttonClass_img {
+    -webkit-box-shadow: 0 7.5px 20px 7px #dcd2c7;
+-moz-box-shadow: 0 7.5px 20px 7px #dcd2c7;
+box-shadow: 0 7.5px 20px 7px #dcd2c7;
+transition: all 300ms ease 50ms;
+    padding: -50px -50px !important;
+    border: none !important;
+}
+
+.vultures_buttonClass_img:hover {
+    -webkit-box-shadow: 0 7.5px 32px 32px #dcd2c7;
+-moz-box-shadow: 0 7.5px 32px 32px #dcd2c7;
+box-shadow: 0 7.5px 32px 32px #dcd2c7;
+transform: scale(1.3);
+}
+
+.vultures_buttonClass_img {
+
+}
 
 .modal-backdrop {
     position: fixed;
@@ -174,6 +210,7 @@
     width: 100%;
     height: 200px;
     border-radius: 120px;
+    border: none;
     transform: scale(1);
     transition: all 200ms ease;
     z-index: -100;
@@ -196,7 +233,10 @@
     border-radius: 6px;
 }
 
-@media (max-width: 431px) {
+@media (max-width: 725px) {
+    .ow {
+        margin: 0 0;
+    }
     .modal-backdrop {
         height: 150vh;
     }
@@ -217,7 +257,7 @@
         height: 100%;
     }
     .ow_container {
-    margin: 15.5vh 0;
+    margin: 25.5vh 0;
     }
     .modal-button {
         z-index: 0;

@@ -22,6 +22,8 @@ import jikVinyl from "../../jis_vinyl.jpg";
 import jikCd from "../../jis_cd.png";
 import dondaVinyl from "../../donda_vinyl.jpg";
 import dondaCd from "../../donda_cd.png";
+import vulturesVinyl from '../../vultures_vinyl.jpg';
+import vulturesCd from "../../tcd_cd.webp";
 
 const albums = [
   {
@@ -371,6 +373,40 @@ const albums = [
       "23. Pure Souls",
       "24. Come to Life",
       "25. No Child Left Behind"
+    ]
+    
+  },
+  {
+    id: 13,
+    albumclass: "vultures",
+    vinylClass: "vultures_vinyl",
+    vinylSrc: vulturesVinyl,
+    cdSrc: vulturesCd,
+    title: "Vultures",
+    titleClass: "vultures_title",
+    description: "Kanye West's album 'Vultures' (Date: ????), in collaboration with Ty Dolla $ign, is facing multiple delays, moving from an initial December 15, 2023 release to January 12, 2024. The album has sparked controversy due to West's inclusion of antisemitic lyrics, contributing to him being dropped by Adidas and his record label. Despite these issues, 'Vultures' is expected to attract a large audience on streaming platforms, though it's unclear which label will release it",
+    descriptionClass: "vultures_desc",
+    cdClass: "vultures_cd",
+    buttonImgClass: "vultures_buttonClass_img",
+    tracks: [
+      "1. Everybody",
+      "2. Back To Me",
+      "3. Fuk Sumn",
+      "4. Time Moving Slow",
+      "5. Beg Forgiveness",
+      "6. So Good",
+      "7. Paid",
+      "8. Timbo Freestyle",
+      "9. Slide",
+      "10. New Body",
+      "11. Promotion",
+      "12. Vultures",
+      "13. Lifestyle",
+      "14. Drunk",
+      "15. Worship",
+      "16. River",
+      "17. Gun To My Head",
+      "18. Unlock",
     ]
     
   },

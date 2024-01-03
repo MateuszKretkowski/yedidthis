@@ -184,14 +184,14 @@ function Yeezy() {
           <div className="yeezy-wrapper">
             <div className="title_wrapper">
               <h1>The Most Iconic Yeezy Collections</h1>
-              <button className="title_button"  style={{ opacity: hoverStates['wrapper2'] ? 0 : 1 }}><a href={'https://www.yeezy.com/'} target="_blank">Read More About Yeezy</a></button>
+              <button className="title_button"  style={{ opacity: hoverStates['wrapper2'] ? 0 : 1 && hoverStates['wrapper1'] ? 0 : 1 && hoverStates['wrapper3'] ? 0 : 1}}><a href={'https://www.yeezy.com/'} target="_blank">Read More About Yeezy</a></button>
             </div>
           </div>
           <div className="yeezy_collections_container">
             <motion.div className="collection-wrapper"
               onMouseEnter={() => handleMouseEnter('wrapper1')}
               onMouseLeave={() => handleMouseLeave('wrapper1')}
-              style={{ scale: scrollYProgress, opacity: hoverStates['wrapper1'] || !Object.values(hoverStates).some(state => state) ? 1 : 0.35   }}
+              style={{ scale: scrollYProgress,}}
 
             >
               <motion.figure>
@@ -219,7 +219,7 @@ function Yeezy() {
             <motion.div className="collection-wrapper"
               onMouseEnter={() => handleMouseEnter('wrapper2')}
               onMouseLeave={() => handleMouseLeave('wrapper2')}
-              style={{ scale: scrollYProgress, opacity: hoverStates['wrapper2'] || !Object.values(hoverStates).some(state => state) ? 1 : 0.35   }}
+              style={{ scale: scrollYProgress,}}
 
             >
               <motion.figure>
@@ -246,7 +246,7 @@ function Yeezy() {
             <motion.div className="collection-wrapper"
               onMouseEnter={() => handleMouseEnter('wrapper3')}
               onMouseLeave={() => handleMouseLeave('wrapper3')}
-              style={{ scale: scrollYProgress, opacity: hoverStates['wrapper3'] || !Object.values(hoverStates).some(state => state) ? 1 : 0.35   }}
+              style={{ scale: scrollYProgress, }}
 
             >
               <motion.figure>
@@ -273,7 +273,7 @@ function Yeezy() {
             <motion.div className="collection-wrapper"
               onMouseEnter={() => handleMouseEnter('wrapper4')}
               onMouseLeave={() => handleMouseLeave('wrapper4')}
-              style={{ scale: scrollYProgress, opacity: hoverStates['wrapper4'] || !Object.values(hoverStates).some(state => state) ? 1 : 0.35   }}
+              style={{ scale: scrollYProgress, }}
 
             >
               <motion.figure>
@@ -298,7 +298,7 @@ function Yeezy() {
             <motion.div className="collection-wrapper yzypods"
               onMouseEnter={() => handleMouseEnter('wrapper5')}
               onMouseLeave={() => handleMouseLeave('wrapper5')}
-              style={{ scale: scrollYProgress, opacity: hoverStates['wrapper5'] || !Object.values(hoverStates).some(state => state) ? 1 : 0.35   }}
+              style={{ scale: scrollYProgress, }}
 
             >
               <motion.figure className="yzypod_figure">
@@ -317,14 +317,14 @@ function Yeezy() {
               initial={"initial"}
               animate={hoverStates['wrapper5'] ? "animate" : "initial"}
               >
-                <h4 className="collection_desc">Controversial, Innovative Yeezy Pods. Ye is releasing them in 2024, with the release of Vultures, Ye's return.</h4>
+                <h4 className="collection_desc">Yeezy pods are innovative, modular living spaces designed by Kanye West, featuring a futuristic design and advanced technologies.</h4>
               </motion.div>
             </motion.div>
 
             <motion.div className="collection-wrapper"
               onMouseEnter={() => handleMouseEnter('wrapper6')}
               onMouseLeave={() => handleMouseLeave('wrapper6')}
-              style={{ scale: scrollYProgress, opacity: hoverStates['wrapper6'] || !Object.values(hoverStates).some(state => state) ? 1 : 0.35   }}
+              style={{ scale: scrollYProgress, }}
 
             >
               <motion.figure>

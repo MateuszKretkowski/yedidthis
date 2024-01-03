@@ -7,7 +7,7 @@ import Mbdtf from "../Spline Scenes/Mbdtf.js";
 import Yeezy from "../yeezy/yeezy.tsx"
 
 function Biblio() {
-  const [modalOpen, setModalOpen] = useState(Array(albums.length).fill(false));
+  const [modalOpen, setModalOpen] = useState(Array(albums.length + 1).fill(false));
 
   const openModal = (index) => {
     setModalOpen(modalOpen.map((value, i) => (i === index ? true : value)));
@@ -225,21 +225,18 @@ function Biblio() {
   return (
     <div className="ow_container"
     >
-      <div className="introduction-wrapper">
-        <h1 className="section_title ye_text">YE</h1>
-      </div>
       <div className="albums_container"
         id="biblio"
       >
         {albums.map((album, index) => (
-          <div className="button-wrapper" key={album.id}>
+          <div className={'button-wrapper ' + album.buttonClass} key={album.id}>
             <button
               onClick={() => openModal(index)}
               className={`modal-button${modalOpen[index] ? " hidden" : ""}`}
             >
               <img
                 src={album.vinylSrc}
-                className="button_img"
+                className={"button_img " + album.buttonImgClass}
                 alt={album.title}
               ></img>
             </button>

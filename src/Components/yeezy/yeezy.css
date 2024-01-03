@@ -58,11 +58,14 @@ figure {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 7vh;    
+    gap: 10vh;    
 }
 
 .title_button {
     width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .yeezy_collections_container {
@@ -208,7 +211,7 @@ button:hover {
     color: rgba(19, 19, 22, 1);
 }
 
-@media (max-width: 431px) {
+@media (max-width: 725px) {
     .collection-wrapper {
         width: 100vw;
     }
@@ -217,14 +220,16 @@ button:hover {
         height: 50%;
     }
     .yzypod_figure {
-        width: 65%;
-    }
-    .title_4 {
-    }
-    .yzypod_figure {
         width: 85%;
     }
-    .yzy500_title {
-        margin-top: 150%;
+
+    .collection-wrapper:hover .title_button {
+        opacity: 0 !important;
+    }
+    .yeezy_collections_container:hover .collection-wrapper {
+        opacity: 0.05;
+    }
+    .collection-wrapper:hover {
+        opacity: 1 !important;
     }
 }
