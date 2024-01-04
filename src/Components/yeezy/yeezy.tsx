@@ -84,7 +84,7 @@ const collectionDescVariantReversed = {
   animate: {
     opacity: 1,
     scale: 1,
-    y: -900,
+    y: -790,
     transition: {
       delay: 0.4,
       duration: 0.2, type: "tween"
@@ -98,7 +98,7 @@ const collectionTitleVariant = {
     y: 0
   },
   animate: {
-    y: -770,
+    y: -970,
     transition: { 
     duration: 0.3,         
     type: "spring",
@@ -129,30 +129,7 @@ function Yeezy() {
   });
   
   
-  const [windowWidth, setWindowWidth] = useState<number>(window.innerWidth);
-  const [hoverEffectEnabled, setHoverEffectEnabled] = useState<boolean>(true);
-
-  const [selectedBoot, setSelectedBoot] = useState(null);
-  const handleBootClick = (bootId: any) => {
-    setSelectedBoot(bootId);
-  };
-
-
-  useEffect(() => {
-    const handleResize = () => {
-      setWindowWidth(window.innerWidth);
-    };
-
-    window.addEventListener('resize', handleResize);
-    return () => window.removeEventListener('resize', handleResize);
-  }, []);
-
-  useEffect(() => {
-    setHoverEffectEnabled(windowWidth > 431);
-  }, [windowWidth]);
-
   const handleMouseEnter = (wrapperId: string) => {
-    if (!hoverEffectEnabled) return;
     setHoverStates({
       wrapper1: false,
       wrapper2: false,
@@ -162,16 +139,13 @@ function Yeezy() {
       wrapper6: false,
       [wrapperId]: true
     });
-    console.log('Mouse entered');
   };
 
   const handleMouseLeave = (wrapperId: string) => {
-    if (!hoverEffectEnabled) return;
     setHoverStates(prevStates => ({
       ...prevStates,
       [wrapperId]: false
     }));
-    console.log('Mouse left');
   };
 
 
@@ -204,7 +178,7 @@ function Yeezy() {
               animate={hoverStates['wrapper1'] ? "animate" : "initial"}
               
               >
-                <h1 className="collection_title frnrs_title">YEEZY 350V2</h1>
+                <h1 className="collection_title frnrs_title collection_title_right">YEEZY 350V2</h1>
               </motion.div>
               <motion.div className="desc_container"
               variants={collectionDescVariant}
@@ -232,7 +206,7 @@ function Yeezy() {
               initial={"initial"}
               animate={hoverStates['wrapper2'] ? "animate" : "initial"}
               >
-                <h1 className="collection_title frnrs_title">YZY FOAMRNRS</h1>
+                <h1 className="collection_title frnrs_title collection_title_right">YZY FOAMRNRS</h1>
               </motion.div>
               <motion.div className="desc_container"
               variants={collectionDescVariant}
@@ -259,7 +233,7 @@ function Yeezy() {
               initial={"initial"}
               animate={hoverStates['wrapper3'] ? "animate" : "initial"}
               >
-                <h1 className="collection_title frnrs_title">YEEZY SLIDES</h1>
+                <h1 className="collection_title frnrs_title collection_title_right">YEEZY SLIDES</h1>
               </motion.div>
               <motion.div className="desc_container"
               variants={collectionDescVariant}

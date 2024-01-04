@@ -33,10 +33,6 @@
     z-index: -1;
 }
 
-figure {
-    object-position: center;
-}
-
 
 .yeezy_container {
     display: flex;
@@ -100,16 +96,11 @@ figure {
 
 .yzypod_figure {
     position: relative;
-    height: 100%;
-    width: 100%;
 }
-
 
 .yzypods {
     position: relative;
 }
-
-
 
 .yzypod_figure:after {
     content: "";
@@ -123,9 +114,6 @@ figure {
 .title_4 {
 }
 
-.yzy450_cloudwhite {
-    height: 64vh;
-}
 
 
 
@@ -151,8 +139,8 @@ figure {
 
 
 figure {
-    width: 450px;
-    height: auto;
+    width: 20vw;
+    height: 50vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -161,8 +149,9 @@ figure {
     z-index: 50;
 }
 
-img {
+.img {
     width: 200%;
+    height: 100%;
 }
 
 
@@ -211,16 +200,24 @@ button:hover {
     color: rgba(19, 19, 22, 1);
 }
 
+@media (max-width: 2000px) {
+    .collection_title_right {
+        margin-top: 0%;
+    }
+    .collection-wrapper:hover .collection_title_right {
+        margin-top: 200%;
+    }
+    .collection_title_reversed {
+    }
+}
+
 @media (max-width: 725px) {
     .collection-wrapper {
         width: 100vw;
     }
     figure {
-        width: 80%;
-        height: 50%;
-    }
-    .yzypod_figure {
-        width: 85%;
+        width: 50%;
+        height: 40%;
     }
 
     .collection-wrapper:hover .title_button {

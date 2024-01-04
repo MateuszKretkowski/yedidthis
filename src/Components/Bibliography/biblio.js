@@ -223,8 +223,11 @@ function Biblio() {
   
 
   return (
+      
     <div className="ow_container"
     >
+      <div className="albums_wrapper">
+
       <div className="albums_container"
         id="biblio"
       >
@@ -247,6 +250,7 @@ function Biblio() {
             />
           </div>
         ))}
+      </div>
       </div>
     </div>
   );

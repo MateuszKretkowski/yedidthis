@@ -42,6 +42,8 @@ button:hover {
     top: 100%;
     left: 0%;
     background: url("./ye_section-bg.png");
+    background-size: 130%;
+    background-position: center;
     width: 100%;
     height: 100%;
     z-index: -500;

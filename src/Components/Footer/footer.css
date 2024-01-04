@@ -5,7 +5,7 @@
     padding: 12px calc(100vh / 4.2);
     align-items: flex-end;
     width: 100vw;
-    height: 45vh;
+    height: 38vh;
     background-color: #141416;
 }
 
@@ -52,7 +52,7 @@ h5 {
 
 @media (max-width: 431px) {
     .footer {
-        height: 35vh;
+        height: 45vh;
         padding: 12px 22px;
         display: flex;
         justify-content: start;
