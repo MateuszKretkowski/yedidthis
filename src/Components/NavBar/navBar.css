@@ -47,7 +47,7 @@ header:after {
         display: none;
     }
     .ye_logo {
-        width: 20vw;
+        width: 24vw !important;
     }
 }
 .navbar_link:hover {
@@ -67,9 +67,10 @@ header:after {
 }
 
 .ye_logo {
-    width: 12vw;
+    width: 7vw;
+    margin-top: 2%;
     height: auto;
-    filter: blur(0.7px) invert(1);
+    filter: blur(0.8px) invert(1);
     text-shadow: 0px 0px 8px rgb(255, 255, 255);
 }
 

@@ -42,7 +42,7 @@ button:hover {
     top: 100%;
     left: 0%;
     background: url("./ye_section-bg.png");
-    background-size: 130%;
+    background-size: 100%;
     background-position: center;
     width: 100%;
     height: 100%;
@@ -85,38 +85,18 @@ h4 {
 }
 
 
-.scroll {
-    top: 70%;
-    position: absolute;
-    width: 40px;
-    height: 60px;
-    filter: blur(0.7px);
-    border: 3px solid white;
-    border-radius: 30%;
-}
-
-.scroll:after {
-    content: "";
-    position: absolute;
-    top: 30%;
-    left: 48%;
-    width: 2px;
-    height: 7px;
-    background-color: white;
-    filter: blur(0.5px);
-    border-radius: 10%;
-    transition: all 300ms ease;
-    animation: scroll 1.5s ease-out infinite;
-}
-
 .section_subtitle {
     font-size: 18px;
     margin: 12px 12px;
 }
 
+@media (min-width: 2000px) {
+    .ye_bg {
+        background-size: 130%;
+    }
+}
 
-
-@media (max-width: 431px) {
+@media (max-width: 745px) {
     .container {
         width: 100vw;
         overflow-x: hidden;

@@ -98,7 +98,20 @@ const collectionTitleVariant = {
     y: 0
   },
   animate: {
-    y: -970,
+    y: -600,
+    transition: { 
+    duration: 0.3,         
+    type: "spring",
+  }
+  },
+};
+
+const collectionTitleVariantReversed = {
+  initial: {
+    y: -650
+  },
+  animate: {
+    y: 0,
     transition: { 
     duration: 0.3,         
     type: "spring",
@@ -254,18 +267,18 @@ function Yeezy() {
                 <motion.img src={yeezyBoots[7].imgSrc} className={"img " + yeezyBoots[7].imgClass} />
               </motion.figure>
               <motion.div className="title_container title_4"
-              variants={collectionTitleVariant}
+              variants={collectionTitleVariantReversed}
               initial={"initial"}
-              animate={hoverStates['wrapper4'] ? "initial" : "animate"}
+              animate={hoverStates['wrapper4'] ? "animate"  : "initial"}
               >
                 <h1 className="collection_title collection_title_reversed yzy450_title">YEEZY 450V2</h1>
               </motion.div>
               <motion.div className="desc_container"
               variants={collectionDescVariantReversed}
               initial={"initial"}
-              animate={hoverStates['wrapper4'] ? "animate" : "initial"}
+              animate={hoverStates['wrapper4'] ? "animate"  : "initial"}
               >
-                <h4 className="collection_desc">Avant-garde shoes with a unique, web-like structure on the midsole, blending with a primeknit upper for comfort and style</h4>
+                <h4 className="collection_desc collection_desc_reversed">Avant-garde shoes with a unique, web-like structure on the midsole, blending with a primeknit upper for comfort and style</h4>
               </motion.div>
             </motion.div>
 
@@ -279,10 +292,10 @@ function Yeezy() {
                 <motion.img src={yeezyBoots[12].imgSrc} className={"img " + yeezyBoots[12].imgClass} />
               </motion.figure>
               <motion.div className="title_container"
-              variants={collectionTitleVariant}
+              variants={collectionTitleVariantReversed}
 
               initial={"initial"}
-              animate={hoverStates['wrapper5'] ? "initial" : "animate"}
+              animate={hoverStates['wrapper5'] ? "animate"  : "initial"}
               >
                 <h1 className="collection_title collection_title_reversed yzypods_title">YZY PODS</h1>
               </motion.div>
@@ -291,7 +304,7 @@ function Yeezy() {
               initial={"initial"}
               animate={hoverStates['wrapper5'] ? "animate" : "initial"}
               >
-                <h4 className="collection_desc">Yeezy pods are innovative, modular living spaces designed by Kanye West, featuring a futuristic design and advanced technologies.</h4>
+                <h4 className="collection_desc collection_desc_reversed">Yeezy pods are innovative, modular living spaces designed by Kanye West, featuring a futuristic design and advanced technologies.</h4>
               </motion.div>
             </motion.div>
 
@@ -305,9 +318,9 @@ function Yeezy() {
               <motion.img src={yeezyBoots[11].imgSrc} className={"img " + yeezyBoots[11].imgClass} />
               </motion.figure>
               <motion.div className="title_container collection_title_reversed title_4"
-              variants={collectionTitleVariant}
+              variants={collectionTitleVariantReversed}
               initial={"initial"}
-              animate={hoverStates['wrapper6'] ? "initial"  : "animate"}
+              animate={hoverStates['wrapper6'] ? "animate"  : "initial"}
               >
                 <h1 className="collection_title yzy500_title">YEEZY 500</h1>
               </motion.div>
@@ -316,7 +329,7 @@ function Yeezy() {
               initial={"initial"}
               animate={hoverStates['wrapper6'] ? "animate" : "initial"}
               >
-                <h4 className="collection_desc yzy500_desc">Retro, chunky silhouette sneakers combining suede, leather, and mesh with adiPRENE+ cushioning for style and comfort.</h4>
+                <h4 className="collection_desc collection_desc_reversed">Retro, chunky silhouette sneakers combining suede, leather, and mesh with adiPRENE+ cushioning for style and comfort.</h4>
               </motion.div>
             </motion.div>
 

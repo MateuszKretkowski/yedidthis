@@ -200,12 +200,21 @@ button:hover {
     color: rgba(19, 19, 22, 1);
 }
 
-@media (max-width: 2000px) {
+.collection_title_reversed {
+}
+
+@media (min-width: 2000px) {
     .collection_title_right {
         margin-top: 0%;
     }
     .collection-wrapper:hover .collection_title_right {
-        margin-top: 200%;
+        margin-top: -200%;
+    }
+    .collection_desc_reversed {
+        margin-top: 0%;
+    }
+    .collection-wrapper:hover .collection_desc_reversed {
+        margin-top: -100%;
     }
     .collection_title_reversed {
     }
